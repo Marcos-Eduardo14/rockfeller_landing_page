@@ -1,0 +1,144 @@
+/* CORES */
+:root {
+    --azul_one: #003F7C;
+    --azul_two: #002147;
+    --azul_tree:#0068DF;
+    --azul_four:#5995FF;
+
+    --offwhite: #EDEBE6;
+    --white: #ffff;
+    
+    --amarelo_one: #FC8A18;
+    --amarelo_two: #FF9A00;
+    --amarelo_tree:#FFC033;
+
+    --light: "Verlag-Light";
+    --bold: "Verlag-Bold";
+    --black: "Verlag-Black";
+}
+
+/* FONTES */
+@font-face {
+  font-family: "Verlag-Light";
+  src: url("/assets/fonts/Verlag-Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verlag-Bold";
+  src: url("/assets/fonts/Verlag-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verlag-Black";
+  src: url("/assets/fonts/Verlag-Black.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--offwhite);
+}
+
+/* CABEÇALHO */
+header {
+  background-color: var(--azul_one);
+  min-height: 7rem;
+  width: 100%;
+  border-bottom: 5px solid #FFC033;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 7rem;
+  gap: 2rem;
+
+  font-family: var(--bold);
+
+  position: fixed;
+  top: 0;
+  left: 0;         
+  width: 100%;
+  z-index: 1;
+}
+
+.rockfeller-logo {
+  width: 250px;
+  height: auto;
+  max-width: 50%;
+  transition: all 0.5 ease;
+}
+
+.rockfeller-logo:hover {
+  transform: scale(0.97);
+}
+
+.content_head_esq a, .content_head_dir a {
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+}
+
+.content_head_esq a,
+.content_head_dir a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content_head_esq a,
+.content_head_dir a:not(:last-child) {
+  border-right: 2px solid white;
+  padding-right: 50px;
+  padding: 15px;
+}
+
+.content_head_dir a.matricule_line {
+  border-left: 2px solid white;
+  padding-left: 50px;
+  padding: 15px;
+}
+
+.content_head_dir a, .content_head_esq a:hover {
+  transform: scale(1.2);
+}
+
+.teste_ing {
+  width: 100px;
+ background-color: var(--azul_tree);
+  border-radius: 2rem;
+  border: 3px solid var(--white);
+  margin: 1rem;
+  padding: 12px 30px;
+  font-size: 16px;
+}
+
+/*.teste_ing:hover{
+  padding: 15px 35px 15px 35px;
+}*/
+
+@media screen and (min-width: 1920px) {
+.content_head_esq a,
+.content_head_dir a:not(:last-child) {
+  border-right: 2px solid white;
+  padding-right: 60px;
+  padding: 20px;
+}
+
+.content_head_dir a.matricule_line {
+  border-left: 2px solid white;
+  padding-left: 60px;
+  padding: 20px;
+}
+}
