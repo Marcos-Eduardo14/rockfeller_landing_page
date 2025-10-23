@@ -13,9 +13,19 @@ let secoes = filtrarsecao(dadosbrutos);
 console.log(secoes);
 
 let headerhtml = headerHtml(secoes.header);
+
 let herohtml = heroHtml(secoes.hero);
+
 let sobrenoshtml = sobrenosHtml(secoes.secaosobre);
+
 let nossoscursoshtml = nossoscursosHtml(secoes.nossoscursos);
+
+document.getElementById("container_nossos_cursos").appendChild(nossoscursoshtml);
+
 let formulariohtml = formularioHtml(secoes.formulario);
+
 let comentarioshtml = comentariosHtml(secoes.coments);
+
 let footerhtml = footerHtml(secoes.footer);
+
+console.log(nossoscursoshtml)

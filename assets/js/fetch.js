@@ -17,7 +17,7 @@ function filtrarsecao(dadosbrutos){
     coments : null,
     footer : null
    } 
-    let header;
+   
     dadosbrutos.result.forEach(secao => {
         if(secao._type === "header"){
             secoes.header = secao;
