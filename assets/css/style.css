@@ -49,96 +49,148 @@ body {
   background-color: var(--offwhite);
 }
 
-/* CABEÇALHO */
-header {
-  background-color: var(--azul_one);
-  min-height: 7rem;
-  width: 100%;
-  border-bottom: 5px solid #FFC033;
+/* NOSSOS CURSOS */
+
+.bar {
+  margin: 5rem auto 0 auto;
+  margin-top: 10rem;
+
+  background-color: var(--amarelo_tree);
+  padding: 5px 5px;
+  width: 20%;
+  min-height: 5px;
 }
 
-#header {
+#container_nossos_cursos {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 7rem;
-  gap: 2rem;
-
-  font-family: var(--bold);
-
-  position: fixed;
-  top: 0;
-  left: 0;         
   width: 100%;
-  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.rockfeller-logo {
-  width: 250px;
-  height: auto;
-  max-width: 50%;
-  transition: all 0.5 ease;
+.title_cursos {
+  margin-top: 10rem;
+
+  font-family: var(--black);
+  font-size: 45px;
+  color: var(--azul_one);
+
+  border-bottom: 10px solid var(--amarelo_tree);
 }
 
-.rockfeller-logo:hover {
-  transform: scale(0.97);
+.subtitle_cursos {
+  margin-top: 5rem;
+
+  font-family: var(--light);
+  font-size: 25px;
+  color: var(--azul_two);
+
+  background-color: #FFC033;
+  display: inline-block;
+  padding: 0rem 27rem;
+  border-radius: 5px;
 }
 
-.content_head_esq a, .content_head_dir a {
+.cards_cursos {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  align-items: center;
+}
+
+.curso_card {
+  margin-top: 2rem;
+
+  background-color: var(--azul_four);
+  border-radius: 10px;
+
+  padding: 5rem 9rem 5rem 9rem;   
+}
+
+.curso_card h1 {
+  font-family: var(--black);
+  color: var(--azul_one);
+
+  font-size: 70px;
+}
+
+.curso_card h3 {
+  font-family: var(--bold);
   color: var(--white);
-  text-decoration: none;
-  text-align: center;
+
+  font-size: 40px;
+  max-width: 500px;
 }
 
-.content_head_esq a,
-.content_head_dir a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+.curso_card p {
+  font-family: var(--light);
+  color: var(--white);
+
+  font-size: 20px;
+  max-width: 500px;
 }
 
-.content_head_esq a,
-.content_head_dir a:not(:last-child) {
-  border-right: 2px solid white;
-  padding-right: 50px;
-  padding: 15px;
-}
-
-.content_head_dir a.matricule_line {
-  border-left: 2px solid white;
-  padding-left: 50px;
-  padding: 15px;
-}
-
-.content_head_dir a, .content_head_esq a:hover {
-  transform: scale(1.2);
-}
-
-.teste_ing {
-  width: 100px;
- background-color: var(--azul_tree);
-  border-radius: 2rem;
-  border: 3px solid var(--white);
-  margin: 1rem;
-  padding: 12px 30px;
-  font-size: 16px;
-}
-
-/*.teste_ing:hover{
-  padding: 15px 35px 15px 35px;
-}*/
-
+/* Responsividade para Monitores */
 @media screen and (min-width: 1920px) {
-.content_head_esq a,
-.content_head_dir a:not(:last-child) {
-  border-right: 2px solid white;
-  padding-right: 60px;
-  padding: 20px;
+  #container_nossos_cursos {
+    max-width: 2400px;
+  }
+
+  .curso_card {
+  margin-top: 2rem;
+
+  background-color: var(--azul_four);
+  border-radius: 10px;
+
+  padding: 5rem 10rem 5rem 10rem;
 }
 
-.content_head_dir a.matricule_line {
-  border-left: 2px solid white;
-  padding-left: 60px;
-  padding: 20px;
 }
+
+/* Responsividade para Mobile */
+@media (min-width: 320px) and (max-width: 1000px) {
+   .bar {
+    margin-top: 6rem;
+    width: 30%;
+  }
+
+  .title_cursos {
+    margin-top: 6rem;
+    font-size: clamp(2rem, 4vw, 2rem);
+    text-align: center;
+    border-bottom-width: 6px;
+  }
+
+  .subtitle_cursos {
+    margin-top: 1.5rem;
+
+    font-family: var(--light);
+    color: var(--azul_two);
+    background-color: #FFC033;
+
+    display: inline-block;
+    text-align: center;
+    padding: 0.8rem 5rem;
+
+    min-width: auto;
+    max-width: 95vw;
+
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+  }
+
+  .cards_cursos {
+    width: 100%;
+    padding: 0 80rem;
+    gap: 20px;
+  }
+
+  #container_nossos_cursos {
+    gap: 20px;
+    max-width: 100%;
+  }
 }
