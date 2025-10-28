@@ -24,6 +24,7 @@ document.getElementById("container_sessao_hero").appendChild(herohtml);
 document.getElementById("container_nossos_cursos").appendChild(nossoscursoshtml);
 
 let formulariohtml = formularioHtml(secoes.formulario);
+document.getElementById("container_formulario").appendChild(formulariohtml);
 
 let comentarioshtml = comentariosHtml(secoes.coments);
 

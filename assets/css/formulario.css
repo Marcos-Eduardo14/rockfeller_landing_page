@@ -1,0 +1,275 @@
+/* FORMULÁRIO DE MATRÍCULA */
+
+.container_formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 8rem auto 4rem auto;
+  padding: 0 2rem;
+}
+
+/* Barras decorativas */
+.barra_decorativa {
+  width: 80%;
+  height: 3px;
+  background-color: var(--amarelo_tree);
+  margin: 1rem 0;
+}
+
+/* Botão "Seja um Rocker!" */
+.botao_seja_rocker {
+  background-color: var(--azul_one);
+  color: var(--white);
+  font-family: var(--bold);
+  font-size: 20px;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 1rem 0;
+}
+
+.botao_seja_rocker:hover {
+  background-color: var(--azul_two);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 63, 124, 0.3);
+}
+
+/* Título */
+.titulo_formulario {
+  font-family: var(--black);
+  font-size: 48px;
+  color: var(--azul_one);
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+  border-bottom: 8px solid var(--amarelo_tree);
+  padding-bottom: 0.5rem;
+}
+
+/* Container do formulário (fundo amarelo) */
+.form_container {
+  background-color: var(--amarelo_tree);
+  border-radius: 15px;
+  padding: 3rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtítulo */
+.subtitulo_formulario {
+  font-family: var(--light);
+  font-size: 18px;
+  color: var(--azul_two);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.subtitulo_formulario strong {
+  font-family: var(--bold);
+  color: var(--azul_one);
+}
+
+/* Formulário */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Container de campo */
+.campo_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Label do campo */
+.campo_label {
+  font-family: var(--bold);
+  font-size: 16px;
+  color: var(--azul_two);
+}
+
+.campo_obrigatorio {
+  color: #d32f2f;
+}
+
+/* Input e Select */
+.campo_input {
+  font-family: var(--light);
+  font-size: 16px;
+  padding: 0.8rem 1rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  background-color: var(--white);
+  color: var(--azul_two);
+  transition: all 0.3s ease;
+}
+
+.campo_input:focus {
+  outline: none;
+  border-color: var(--azul_one);
+  box-shadow: 0 0 0 3px rgba(0, 63, 124, 0.1);
+}
+
+.campo_input::placeholder {
+  color: #999;
+}
+
+.campo_select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.2em;
+  padding-right: 3rem;
+}
+
+/* Botão Enviar */
+.botao_enviar {
+  background-color: var(--azul_one);
+  color: var(--white);
+  font-family: var(--bold);
+  font-size: 18px;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 200px;
+  align-self: center;
+}
+
+.botao_enviar:hover {
+  background-color: var(--azul_two);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 63, 124, 0.3);
+}
+
+.botao_enviar:active {
+  transform: translateY(0);
+}
+
+/* Mensagens de sucesso/erro */
+.mensagem_container {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-family: var(--bold);
+  font-size: 16px;
+}
+
+.mensagem_sucesso {
+  background-color: #4caf50;
+  color: var(--white);
+}
+
+.mensagem_erro {
+  background-color: #f44336;
+  color: var(--white);
+}
+
+/* Responsividade para Mobile */
+@media (min-width: 320px) and (max-width: 1000px) {
+  .container_formulario {
+    margin: 4rem auto 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .barra_decorativa {
+    width: 90%;
+    height: 2px;
+  }
+
+  .botao_seja_rocker {
+    font-size: 16px;
+    padding: 0.8rem 2rem;
+  }
+
+  .titulo_formulario {
+    font-size: clamp(2rem, 5vw, 3rem);
+    border-bottom-width: 5px;
+  }
+
+  .form_container {
+    padding: 2rem 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .subtitulo_formulario {
+    font-size: 16px;
+  }
+
+  .campo_label {
+    font-size: 14px;
+  }
+
+  .campo_input {
+    font-size: 14px;
+    padding: 0.7rem 0.8rem;
+  }
+
+  .botao_enviar {
+    font-size: 16px;
+    max-width: 100%;
+  }
+}
+
+/* Responsividade para Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form_container {
+    max-width: 700px;
+  }
+}
+
+/* Responsividade para Monitores grandes */
+@media screen and (min-width: 1920px) {
+  .container_formulario {
+    max-width: 1600px;
+  }
+
+  .form_container {
+    max-width: 1000px;
+    padding: 4rem;
+  }
+
+  .titulo_formulario {
+    font-size: 56px;
+  }
+
+  .subtitulo_formulario {
+    font-size: 20px;
+  }
+
+  .campo_label {
+    font-size: 18px;
+  }
+
+  .campo_input {
+    font-size: 18px;
+    padding: 1rem 1.2rem;
+  }
+
+  .botao_seja_rocker {
+    font-size: 22px;
+    padding: 1.2rem 3.5rem;
+  }
+
+  .botao_enviar {
+    font-size: 20px;
+    padding: 1.2rem 2.5rem;
+    max-width: 250px;
+  }
+}
+
