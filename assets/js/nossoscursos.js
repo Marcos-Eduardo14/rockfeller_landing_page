@@ -2,6 +2,9 @@ export function nossoscursosHtml (nossoscursosobj) {
   // segurança: caso não haja dados
   if (!nossoscursosobj) return document.createTextNode("Nenhum curso encontrado.");
 
+  const bar_init = document.createElement("div");
+  bar_init.classList.add("bar");
+
   const container = document.getElementById("container_nossos_cursos");
 
   const title = document.createElement("h1");
@@ -28,7 +31,7 @@ export function nossoscursosHtml (nossoscursosobj) {
       card.style.backgroundImage = `url(${img})`;
       card.style.backgroundSize = "contain";
       card.style.backgroundPosition = "center";
-      card.style.backgroundRepeat = "no-repeat";
+      card.style.backgroundRepeat = "no-repeat";             
 
       // textos
       const titulo_card = document.createElement("h1");
@@ -56,6 +59,7 @@ export function nossoscursosHtml (nossoscursosobj) {
 
   cont_nossos_cursos.appendChild(cards);
   
+  container.appendChild(bar_init);
   container.appendChild(title);
   container.appendChild(subtitle);
   container.appendChild(cont_nossos_cursos);
