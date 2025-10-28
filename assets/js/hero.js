@@ -1,12 +1,9 @@
 export function heroHtml(hero) {
-    const secaohero = document.createElement("section");
     const tagimg = document.createElement("img");
 
     tagimg.src = gerarImagem(hero.mainImage.asset._ref)||"";
 
-    secaohero.appendChild(tagimg);
-    
-    return secaohero;  
+    return tagimg;  
 
     function gerarImagem(img) {
     const id = img.replace(/^image-/, '').replace(/-(\w+)$/, '.$1');
