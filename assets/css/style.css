@@ -148,6 +148,10 @@ body {
   max-width: 500px;
 }
 
+.livros {
+  max-width: 120px;
+}
+
 /* Responsividade para Monitores */
 @media screen and (min-width: 1920px) {
   #container_nossos_cursos {

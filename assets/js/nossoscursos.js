@@ -1,4 +1,4 @@
-export function nossoscursosHtml (nossoscursosobj) {
+export function nossoscursosHtml(nossoscursosobj) {
   // segurança: caso não haja dados
   if (!nossoscursosobj) return document.createTextNode("Nenhum curso encontrado.");
 
@@ -25,13 +25,27 @@ export function nossoscursosHtml (nossoscursosobj) {
     nossoscursosobj.courseCategories.forEach(curso => {
       const card = document.createElement("div");
       card.classList.add("curso_card");
-      
-      // imagem de fundo
-      const img = gerarImagem(curso.backgroundImage.asset._ref) || "";
-      card.style.backgroundImage = `url(${img})`;
-      card.style.backgroundSize = "contain";
-      card.style.backgroundPosition = "center";
-      card.style.backgroundRepeat = "no-repeat";             
+
+      // imagens de fundo
+      const fundo_alunos = gerarImagem(curso.backgroundImage.asset._ref) || "";
+      let fundo_livros= "";
+
+      if (curso.backgroundImageBooks?.asset?._ref) {
+        fundo_livros = gerarImagem(curso.backgroundImageBooks.asset._ref) || "";
+      }
+
+      // aplica as imagens juntas como background
+      if (fundo_livros) {
+        card.style.backgroundImage = `url(${fundo_livros}), url(${fundo_alunos})`;
+        card.style.backgroundPosition = "bottom right, center";
+        card.style.backgroundSize = "25%, contain"; // 25% = tamanho do overlay dos livros
+        card.style.backgroundRepeat = "no-repeat, no-repeat";
+      } else {
+        card.style.backgroundImage = `url(${fundo_alunos})`;
+        card.style.backgroundSize = "contain";
+        card.style.backgroundPosition = "center";
+        card.style.backgroundRepeat = "no-repeat";
+      }
 
       // textos
       const titulo_card = document.createElement("h1");
@@ -42,7 +56,7 @@ export function nossoscursosHtml (nossoscursosobj) {
 
       const descricao_card = document.createElement("p");
       descricao_card.textContent = curso.detailedDescription;
-      
+
       // container de textos
       const content = document.createElement("div");
       content.classList.add("curso_conteudo");
@@ -51,14 +65,13 @@ export function nossoscursosHtml (nossoscursosobj) {
       content.appendChild(destaque_card);
       content.appendChild(descricao_card);
 
-      // junta tudo no card
+      // adiciona o conteúdo no card
       card.appendChild(content);
       cards.appendChild(card);
     });
   }
 
   cont_nossos_cursos.appendChild(cards);
-  
   container.appendChild(bar_init);
   container.appendChild(title);
   container.appendChild(subtitle);
