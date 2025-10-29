@@ -38,7 +38,7 @@ export function nossoscursosHtml(nossoscursosobj) {
       if (fundo_livros) {
         card.style.backgroundImage = `url(${fundo_livros}), url(${fundo_alunos})`;
         card.style.backgroundPosition = "bottom right, center";
-        card.style.backgroundSize = "25%, contain"; // 25% = tamanho do overlay dos livros
+        card.style.backgroundSize = "40%, contain";
         card.style.backgroundRepeat = "no-repeat, no-repeat";
       } else {
         card.style.backgroundImage = `url(${fundo_alunos})`;

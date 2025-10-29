@@ -86,7 +86,6 @@ body {
 
 .title_cursos {
   margin-top: 10rem;
-
   font-family: var(--black);
   font-size: 45px;
   color: var(--azul_one);
@@ -111,18 +110,27 @@ body {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+}
+
+.curso_conteudo {
   justify-content: center;
   gap: 0;
   align-items: center;
+  width: 40rem;
 }
 
 .curso_card {
+  display: flex;
+  justify-content: flex-start;
   margin-top: 2rem;
 
   background-color: var(--azul_four);
   border-radius: 10px;
 
-  padding: 5rem 9rem 5rem 9rem;   
+  padding: 4rem 12rem 6rem 4rem;
+  
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .curso_card h1 {
@@ -137,7 +145,7 @@ body {
   color: var(--white);
 
   font-size: 40px;
-  max-width: 500px;
+  max-width: 450px;
 }
 
 .curso_card p {
@@ -145,11 +153,7 @@ body {
   color: var(--white);
 
   font-size: 20px;
-  max-width: 500px;
-}
-
-.livros {
-  max-width: 120px;
+  max-width: 375px;
 }
 
 /* Responsividade para Monitores */
