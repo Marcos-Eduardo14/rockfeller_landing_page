@@ -1,0 +1,21 @@
+/* Hero */
+@media (max-width: 720px) {   /* estilos que valem apenas em telas até 720px de largura */
+  #container_sessao_hero img{ 
+    width: 200%; 
+    margin: 0%;
+    padding: 0%;
+  }
+}
+#container_sessao_hero{
+  display: flex; /*a sessão e seus filhos são flexiveis*/
+  width: 99vw;
+  margin: 0%;
+  padding: 0%;
+  justify-content: center; /* centraliza horizontal */
+  align-items: center;   /* centraliza vertical */
+}
+#container_sessao_hero img{ 
+  width: 99vw; 
+  margin: 0%;
+  padding: 0%;
+}
