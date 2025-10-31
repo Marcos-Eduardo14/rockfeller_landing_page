@@ -102,8 +102,16 @@ body {
 
   background-color: #FFC033;
   display: inline-block;
-  padding: 0rem 27rem;
+  padding: 8px 5rem 8px;
   border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle_cursos:hover {
+  user-select: none;
+  transition: all 0.5s ease;
+  background-color: var(--azul_two);
+  color: var(--white);
 }
 
 .cards_cursos {
@@ -116,7 +124,7 @@ body {
   justify-content: center;
   gap: 0;
   align-items: center;
-  width: 40rem;
+  width: 42rem;
 }
 
 .curso_card {
@@ -124,6 +132,7 @@ body {
   justify-content: flex-start;
   margin-top: 2rem;
 
+  user-select: none;
   background-color: var(--azul_four);
   border-radius: 10px;
 
@@ -131,6 +140,10 @@ body {
   
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curso_card:hover {
+  transform: scale(0.99); 
 }
 
 .curso_card h1 {
@@ -156,6 +169,54 @@ body {
   max-width: 375px;
 }
 
+.botao_duvidas {
+  background-color: var(--azul_tree);
+  color: var(--white);
+  font-family: var(--bold);
+  font-size: 20px;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 1rem 0;
+  user-select: none;
+}
+
+.botao_duvidas:hover {
+  background-color: var(--azul_one);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: var(--amarelo_tree)
+}
+
+.botao_duvidas::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%) translateY(15px);
+  background-color: var(--amarelo_tree);
+  color: var(--azul_one);
+  padding: 10px 20px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  font-size: 15px;
+}
+
+.botao_duvidas:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.botao_duvidas:hover::before {
+  opacity: 1;
+}
+
+
 /* Responsividade para Monitores */
 @media screen and (min-width: 1920px) {
   #container_nossos_cursos {
@@ -168,7 +229,20 @@ body {
   background-color: var(--azul_four);
   border-radius: 10px;
 
-  padding: 5rem 10rem 5rem 10rem;
+  padding: 5rem 15rem 6rem 5rem;
+}
+
+.subtitle_cursos {
+  margin-top: 5rem;
+
+  font-family: var(--light);
+  font-size: 25px;
+  color: var(--azul_two);
+
+  background-color: #FFC033;
+  display: inline-block;
+  padding: 8px 5rem 8px;
+  border-radius: 5px;
 }
 
 }

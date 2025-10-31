@@ -1,7 +1,7 @@
 export function heroHtml(hero) {
     const tagimg = document.createElement("img");
 
-    tagimg.src = gerarImagem(hero.mainImage.asset._ref)||"";
+    tagimg.src = gerarImagem(hero.mainImage[0].asset._ref)||"";
 
     return tagimg;  
 

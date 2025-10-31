@@ -18,9 +18,24 @@ export function nossoscursosHtml(nossoscursosobj) {
   const cont_nossos_cursos = document.createElement("section");
   cont_nossos_cursos.classList.add("nossos-cursos");
 
+  const botaoduvidas = document.createElement("button");
+  botaoduvidas.classList.add("botao_duvidas");
+  botaoduvidas.textContent = "Quer saber mais?";
+  botaoduvidas.style.display = "block";
+  botaoduvidas.style.margin = "4rem auto 0 auto";
+  botaoduvidas.setAttribute("data-tooltip", "Fale Conosco!")
+
+  document.body.appendChild(botaoduvidas);
+
+  botaoduvidas.addEventListener("click", () => {
+    const num_whats = "5545998546395"
+    const mensagem = "Olá! Encontrei o site da Rockfeller Toledo e gostaria de saber mais sobre os cursos que vocês oferecem. Poderiam me ajudar com algumas dúvidas? 🚀";
+    const link = `https://api.whatsapp.com/send?phone=${num_whats}&text=${encodeURIComponent(mensagem)}`;
+      window.open (link, "_blank");
+    });
+
   const cards = document.createElement("div");
   cards.classList.add("cards_cursos");
-
   if (nossoscursosobj.courseCategories && Array.isArray(nossoscursosobj.courseCategories)) {
     nossoscursosobj.courseCategories.forEach(curso => {
       const card = document.createElement("div");
@@ -37,12 +52,12 @@ export function nossoscursosHtml(nossoscursosobj) {
       // aplica as imagens juntas como background
       if (fundo_livros) {
         card.style.backgroundImage = `url(${fundo_livros}), url(${fundo_alunos})`;
-        card.style.backgroundPosition = "bottom right, center";
-        card.style.backgroundSize = "40%, contain";
-        card.style.backgroundRepeat = "no-repeat, no-repeat";
+        card.style.backgroundPosition = "right 25px top 50%, center";
+        card.style.backgroundSize = "38%";
+        card.style.backgroundRepeat = "no-repeat";
       } else {
         card.style.backgroundImage = `url(${fundo_alunos})`;
-        card.style.backgroundSize = "contain";
+        card.style.backgroundSize = "40%, contain";
         card.style.backgroundPosition = "center";
         card.style.backgroundRepeat = "no-repeat";
       }
@@ -72,6 +87,8 @@ export function nossoscursosHtml(nossoscursosobj) {
   }
 
   cont_nossos_cursos.appendChild(cards);
+  cont_nossos_cursos.appendChild(botaoduvidas); 
+  
   container.appendChild(bar_init);
   container.appendChild(title);
   container.appendChild(subtitle);
