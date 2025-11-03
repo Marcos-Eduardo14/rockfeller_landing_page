@@ -50,19 +50,6 @@ body {
 }
 
 /* NOSSOS CURSOS */
-#container_sessao_hero{
-  display: flex; /*a sessão e seus filhos são flexiveis*/
-  justify-content: center; /* centraliza horizontal */
-  align-items: center;   /* centraliza vertical */
-}
-#container_sessao_hero img{ 
-  max-width: 95%;  /* faz  aimagem fica rdo tamanho do container sempre */  
-  height: auto; /*aplica uma borda arrendodada*/
-  border-radius: 30px; /*aplica uma borda arrendodada*/
-}
-
-
-/* NOSSOS CURSOS */
 
 .bar {
   margin: 5rem auto 0 auto;

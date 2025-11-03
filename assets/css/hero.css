@@ -1,0 +1,23 @@
+#container_sessao_hero{
+  width: 100%;
+}
+#container_sessao_hero > div{ 
+  position: relative;
+  width: 100%;
+  padding-top: 40%;
+  overflow: hidden;
+}
+#container_sessao_hero > div > img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0; /*posição da iamgem em relação ao pai*/
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /*faz com que a opacidad emude por meio segundo e que o efeito seja: acelera no início e desacelera no fim*/
+}
+#container_sessao_hero > div > img.active {
+  width: 100%;
+  opacity: 1; /* visivel */
+}
