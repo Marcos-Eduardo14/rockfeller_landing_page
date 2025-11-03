@@ -223,7 +223,7 @@ body {
     max-width: 2400px;
   }
 
-  .curso_card {
+.curso_card {
   margin-top: 2rem;
 
   background-color: var(--azul_four);
@@ -248,44 +248,136 @@ body {
 }
 
 /* Responsividade para Mobile */
+/* Responsividade para Mobile */
 @media (min-width: 320px) and (max-width: 1000px) {
-   .bar {
+  .bar {
     margin-top: 6rem;
     width: 30%;
   }
 
   .title_cursos {
     margin-top: 6rem;
-    font-size: clamp(2rem, 4vw, 2rem);
+    font-size: clamp(1.5rem, 5vw, 2rem);
     text-align: center;
     border-bottom-width: 6px;
   }
 
   .subtitle_cursos {
     margin-top: 1.5rem;
-
     font-family: var(--light);
     color: var(--azul_two);
     background-color: #FFC033;
-
     display: inline-block;
     text-align: center;
-    padding: 0.8rem 5rem;
-
+    padding: 0.8rem 1.5rem;
     min-width: auto;
-    max-width: 95vw;
-
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    max-width: 90vw;
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
   }
 
+  /* Container dos cards */
   .cards_cursos {
     width: 100%;
-    padding: 0 80rem;
-    gap: 20px;
+    max-width: 100%;
+    padding: 0 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  /* Cada card individual */
+  .curso_card {
+    margin-top: 1rem;
+    background-color: var(--azul_four);
+    border-radius: 10px;
+    padding: 1.5rem;
+    
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha tudo à esquerda */
+    gap: 0.8rem;
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+
+  /* Elementos internos do card */
+  .curso_card img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .curso_card h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+    word-wrap: break-word;
+    max-width: 100%;
+  }
+
+  .curso_card h3 {
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    word-wrap: break-word;
+    max-width: 50%;
+  }
+
+  .curso_card p {
+    font-size: clamp(0.85rem, 3vw, 1rem); /* Tamanho reduzido */
+    word-wrap: break-word;
+    max-width: 100%; /* Remove a limitação de largura */
+    text-align: left; /* Garante alinhamento à esquerda */
+    line-height: 1.5; /* Melhora a legibilidade */
+  }
+
+  .curso_conteudo {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Botão de dúvidas */
+  .botao_duvidas {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    padding: 0.8rem 2rem;
+    width: auto;
+    align-self: flex-start; /* Mantém o botão alinhado à esquerda */
+  }
+
+  /* Section container */
+  .nossos-cursos {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   #container_nossos_cursos {
-    gap: 20px;
+    gap: 1rem;
     max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+/* Ajuste específico para celulares pequenos */
+@media (min-width: 320px) and (max-width: 480px) {
+  .curso_card {
+    padding: 1rem;
+    gap: 0.6rem;
+  }
+
+  .curso_card p {
+    font-size: clamp(0.8rem, 3.5vw, 0.95rem);
+    line-height: 1.4;
+  }
+
+  .botao_duvidas {
+    font-size: 0.85rem;
+    padding: 0.7rem 1.5rem;
   }
 }
