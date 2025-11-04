@@ -21,7 +21,7 @@
 
 /* Botão "Seja um Rocker!" */
 .botao_seja_rocker {
-  background-color: var(--azul_one);
+  background-color: var(--azul_tree);
   color: var(--white);
   font-family: var(--bold);
   font-size: 20px;
@@ -34,9 +34,9 @@
 }
 
 .botao_seja_rocker:hover {
-  background-color: var(--azul_two);
+  background-color: var(--azul_one);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 63, 124, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Título */
