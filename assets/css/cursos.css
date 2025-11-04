@@ -61,6 +61,13 @@ body {
   min-height: 5px;
 }
 
+.bar_title {
+  background-color: var(--amarelo_tree);
+  padding: 5px 5px;
+  width: 20%;
+  min-height: 5px;
+}
+
 #container_nossos_cursos {
   display: flex;
   flex-direction: column;
@@ -76,8 +83,6 @@ body {
   font-family: var(--black);
   font-size: 45px;
   color: var(--azul_one);
-
-  border-bottom: 10px solid var(--amarelo_tree);
 }
 
 .subtitle_cursos {

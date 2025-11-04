@@ -11,6 +11,9 @@ export function nossoscursosHtml(nossoscursosobj) {
   title.classList.add("title_cursos");
   title.textContent = nossoscursosobj.title || "Nossos Cursos";
 
+  const bar_init_two = document.createElement("div");
+  bar_init_two.classList.add("bar_title");
+
   const subtitle = document.createElement("h2");
   subtitle.classList.add("subtitle_cursos");
   subtitle.textContent = nossoscursosobj.subtitle || "O curso ideal para você está aqui!";
@@ -91,6 +94,7 @@ export function nossoscursosHtml(nossoscursosobj) {
   
   container.appendChild(bar_init);
   container.appendChild(title);
+  container.appendChild(bar_init_two);
   container.appendChild(subtitle);
   container.appendChild(cont_nossos_cursos);
 
