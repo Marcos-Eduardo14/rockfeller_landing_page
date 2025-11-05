@@ -37,6 +37,17 @@ export function nossoscursosHtml(nossoscursosobj) {
       window.open (link, "_blank");
     });
 
+  // Botão "Seja um Rocker!"
+  const botaoRocker = document.createElement("button");
+  botaoRocker.classList.add("botao_seja_rocker");
+  botaoRocker.textContent = "Seja um Rocker!";
+  botaoRocker.addEventListener("click", () => {
+   const destino = document.querySelector("#Matricule-se");
+  if (destino) {
+    destino.scrollIntoView({ behavior: "smooth" });
+  }
+});
+
   const cards = document.createElement("div");
   cards.classList.add("cards_cursos");
   if (nossoscursosobj.courseCategories && Array.isArray(nossoscursosobj.courseCategories)) {
@@ -93,6 +104,7 @@ export function nossoscursosHtml(nossoscursosobj) {
 
   cont_nossos_cursos.appendChild(cards);
   cont_nossos_cursos.appendChild(botaoduvidas); 
+  cont_nossos_cursos.appendChild(botaoRocker);
   
   container.appendChild(bar_init);
   container.appendChild(title);

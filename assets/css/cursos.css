@@ -51,23 +51,7 @@ body {
 
 /* NOSSOS CURSOS */
 
-.bar {
-  margin: 5rem auto 0 auto;
-  margin-top: 10rem;
-
-  background-color: var(--amarelo_tree);
-  padding: 5px 5px;
-  width: 20%;
-  min-height: 5px;
-}
-
-.bar_title {
-  background-color: var(--amarelo_tree);
-  padding: 5px 5px;
-  width: 20%;
-  min-height: 5px;
-}
-
+/* Container Base */
 #container_nossos_cursos {
   display: flex;
   flex-direction: column;
@@ -78,6 +62,34 @@ body {
   margin: 0 auto;
 }
 
+/* Container cards */
+.nossos-cursos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+
+/* Barra de Início */
+.bar {
+  margin: 5rem auto 0 auto;
+  margin-top: 10rem;
+
+  background-color: var(--amarelo_tree);
+  padding: 5px 5px;
+  width: 20%;
+  min-height: 5px;
+}
+
+/* Barra - baixo do título */
+.bar_title {
+  background-color: var(--amarelo_tree);
+  padding: 5px 5px;
+  width: 20%;
+  min-height: 5px;
+}
+
+/* Título - Nossos Cursos */
 .title_cursos {
   margin-top: 10rem;
   font-family: var(--black);
@@ -85,6 +97,7 @@ body {
   color: var(--azul_one);
 }
 
+/* Frase de Ação */
 .subtitle_cursos {
   margin-top: 5rem;
 
@@ -106,18 +119,14 @@ body {
   color: var(--white);
 }
 
+/* Card */
 .cards_cursos {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
 }
 
-.curso_conteudo {
-  justify-content: center;
-  gap: 0;
-  align-items: center;
-  width: 42rem;
-}
+/* Estilização Card */
 
 .curso_card {
   display: flex;
@@ -138,6 +147,14 @@ body {
   transform: scale(0.99); 
 }
 
+/* Textos Card */
+.curso_conteudo {
+  justify-content: center;
+  gap: 0;
+  align-items: center;
+  width: 42rem;
+}
+
 /* Classes específicas para controle de background */
 .card_with_double_bg {
   background-size: 38%, contain;
@@ -149,6 +166,7 @@ body {
   background-position: center;
 }
 
+/* Estilização de Textos: */
 .curso_card h1 {
   font-family: var(--black);
   color: var(--azul_one);
@@ -172,6 +190,7 @@ body {
   max-width: 375px;
 }
 
+/* Estilização - Botão de Dúvidas */
 .botao_duvidas {
   background-color: var(--azul_tree);
   color: var(--white);
@@ -219,6 +238,25 @@ body {
   opacity: 1;
 }
 
+/* Botão "Seja um Rocker!" */
+.botao_seja_rocker {
+  background-color: var(--azul_tree);
+  color: var(--white);
+  font-family: var(--bold);
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 5rem 0;
+}
+
+.botao_seja_rocker:hover {
+  background-color: var(--azul_one);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
 /* Responsividade para Monitores */
 @media screen and (min-width: 1920px) {
@@ -246,6 +284,11 @@ body {
   display: inline-block;
   padding: 8px 5rem 8px;
   border-radius: 5px;
+}
+
+.botao_seja_rocker {
+  font-size: 22px;
+  padding: 1.2rem 3.5rem;
 }
 
 }
@@ -310,7 +353,7 @@ body {
 }
 
 /* Responsividade para Mobile */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 1000px) {
   .bar {
     margin-top: 6rem;
     width: 30%;
@@ -397,7 +440,7 @@ body {
     word-wrap: break-word;
     max-width: 100%;
     line-height: 1.1;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
   }
 
   .curso_card h3 {
@@ -432,6 +475,11 @@ body {
 
   .botao_duvidas::after {
     display: none;
+  }
+
+  .botao_seja_rocker {
+    font-size: 16px;
+    padding: 0.8rem 2rem;
   }
 
   /* Section container */

@@ -14,11 +14,6 @@ function formularioHtml(formularioobj) {
   const barraTop = document.createElement("div");
   barraTop.classList.add("barra_decorativa");
 
-  // Botão "Seja um Rocker!"
-  const botaoRocker = document.createElement("button");
-  botaoRocker.classList.add("botao_seja_rocker");
-  botaoRocker.textContent = "Seja um Rocker!";
-
   // Título
   const titulo = document.createElement("h1");
   titulo.classList.add("titulo_formulario");
@@ -88,7 +83,6 @@ function formularioHtml(formularioobj) {
 
   // Montar tudo
   containerFormulario.appendChild(barraTop);
-  containerFormulario.appendChild(botaoRocker);
   containerFormulario.appendChild(titulo);
   containerFormulario.appendChild(bar_title);
   containerFormulario.appendChild(formContainer);
