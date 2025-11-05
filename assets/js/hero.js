@@ -9,8 +9,11 @@ export function heroHtml(hero) {
 
     return divIMG;  
 
-    function gerarImagem(img) {
+   
+}
+
+
+function gerarImagem(img) {
     const id = img.replace(/^image-/, '').replace(/-(\w+)$/, '.$1');
     return `https://cdn.sanity.io/images/gx7uk6s7/production/${id}`;
-    }
 }

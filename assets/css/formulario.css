@@ -44,10 +44,15 @@
   font-family: var(--black);
   font-size: 48px;
   color: var(--azul_one);
-  margin: 2rem 0 1rem 0;
   text-align: center;
-  border-bottom: 8px solid var(--amarelo_tree);
-  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.bar_title {
+  background-color: var(--amarelo_tree);
+  padding: 5px 5px;
+  width: 20%;
+  min-height: 5px;
 }
 
 /* Container do formulário (fundo amarelo) */
