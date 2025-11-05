@@ -43,7 +43,7 @@ export function nossoscursosHtml(nossoscursosobj) {
 
       // imagens de fundo
       const fundo_alunos = gerarImagem(curso.backgroundImage.asset._ref) || "";
-      let fundo_livros= "";
+      let fundo_livros = "";
 
       if (curso.backgroundImageBooks?.asset?._ref) {
         fundo_livros = gerarImagem(curso.backgroundImageBooks.asset._ref) || "";
@@ -53,13 +53,15 @@ export function nossoscursosHtml(nossoscursosobj) {
       if (fundo_livros) {
         card.style.backgroundImage = `url(${fundo_livros}), url(${fundo_alunos})`;
         card.style.backgroundPosition = "right 25px top 50%, center";
-        card.style.backgroundSize = "38%";
+        card.style.backgroundSize = "38%, contain";
         card.style.backgroundRepeat = "no-repeat";
+        card.classList.add("card_with_double_bg");
       } else {
         card.style.backgroundImage = `url(${fundo_alunos})`;
-        card.style.backgroundSize = "40%, contain";
+        card.style.backgroundSize = "contain";
         card.style.backgroundPosition = "center";
         card.style.backgroundRepeat = "no-repeat";
+        card.classList.add("card_with_single_bg");
       }
 
       // textos
