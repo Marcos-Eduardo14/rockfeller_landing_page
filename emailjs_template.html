@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+      padding: 40px 30px;
+      text-align: center;
+      position: relative;
+    }
+    
+    .header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: #fbbf24;
+    }
+    
+    .logo {
+      color: #ffffff;
+      font-size: 32px;
+      font-weight: 900;
+      margin: 0;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    
+    .logo-icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    
+    .tagline {
+      color: #fbbf24;
+      font-size: 16px;
+      margin-top: 8px;
+      font-weight: 600;
+    }
+    
+    .content {
+      padding: 40px 30px;
+    }
+    
+    .title {
+      color: #1e3a8a;
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    
+    .rocker-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+      color: #1e3a8a;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 0 auto 30px;
+      display: block;
+      width: fit-content;
+      box-shadow: 0 2px 10px rgba(251, 191, 36, 0.3);
+    }
+    
+    .intro-text {
+      text-align: center;
+      color: #64748b;
+      margin-bottom: 30px;
+      font-size: 15px;
+    }
+    
+    .field-group {
+      margin-bottom: 20px;
+      padding: 18px;
+      background: linear-gradient(to right, #f8fafc 0%, #ffffff 100%);
+      border-left: 5px solid #fbbf24;
+      border-radius: 6px;
+      transition: transform 0.2s;
+    }
+    
+    .field-group:hover {
+      transform: translateX(5px);
+    }
+    
+    .field-label {
+      color: #1e3a8a;
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .field-icon {
+      font-size: 18px;
+    }
+    
+    .field-value {
+      color: #334155;
+      font-size: 17px;
+      font-weight: 500;
+      word-wrap: break-word;
+    }
+    
+    .divider {
+      height: 2px;
+      background: linear-gradient(to right, transparent, #fbbf24, transparent);
+      margin: 30px 0;
+    }
+    
+    .extra-info {
+      margin-top: 30px;
+      padding: 20px;
+      background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+      border-radius: 8px;
+      border: 1px solid #bfdbfe;
+    }
+    
+    .extra-info-title {
+      color: #1e40af;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .extra-info-content {
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 6px;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      color: #1e40af;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      max-height: 200px;
+      overflow-y: auto;
+      border: 1px solid #bfdbfe;
+    }
+    
+    .footer {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      padding: 30px;
+      text-align: center;
+    }
+    
+    .footer-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    
+    .footer-subtitle {
+      color: #fbbf24;
+      font-size: 15px;
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+    
+    .footer-info {
+      font-size: 13px;
+      opacity: 0.9;
+      line-height: 1.8;
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(251, 191, 36, 0.3);
+    }
+    
+    .reply-instruction {
+      background-color: rgba(251, 191, 36, 0.2);
+      padding: 12px;
+      border-radius: 6px;
+      margin-top: 15px;
+      font-size: 12px;
+    }
+    
+    .reply-email {
+      color: #fbbf24;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      
+      .content {
+        padding: 30px 20px;
+      }
+      
+      .header {
+        padding: 30px 20px;
+      }
+      
+      .title {
+        font-size: 22px;
+      }
+      
+      .field-group {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo-icon">🎸</div>
+      <h1 class="logo">Rockfeller</h1>
+      <p class="tagline">Language Center</p>
+    </div>
+    
+    <!-- Content -->
+    <div class="content">
+      <h2 class="title">🎉 Nova Solicitação de Matrícula!</h2>
+      
+      <div class="rocker-badge">
+        ⭐ Seja um Rocker! ⭐
+      </div>
+      
+      <p class="intro-text">
+        Um novo aluno demonstrou interesse em fazer parte da família Rockfeller. 
+        Confira os dados abaixo e entre em contato o mais breve possível!
+      </p>
+      
+      <div class="divider"></div>
+      
+      <!-- Campo: Nome -->
+      <div class="field-group">
+        <div class="field-label">
+          <span class="field-icon">👤</span>
+          Nome Completo
+        </div>
+        <div class="field-value">{{from_name}}</div>
+      </div>
+      
+      <!-- Campo: Email -->
+      <div class="field-group">
+        <div class="field-label">
+          <span class="field-icon">📧</span>
+          Email
+        </div>
+        <div class="field-value">
+          <a href="mailto:{{reply_to}}" style="color: #3b82f6; text-decoration: none;">{{reply_to}}</a>
+        </div>
+      </div>
+      
+      <!-- Campo: Telefone -->
+      <div class="field-group">
+        <div class="field-label">
+          <span class="field-icon">📱</span>
+          Telefone / WhatsApp
+        </div>
+        <div class="field-value">{{telefone}}</div>
+      </div>
+      
+      <!-- Campo: CPF (condicional) -->
+      {{#cpf}}
+      <div class="field-group">
+        <div class="field-label">
+          <span class="field-icon">🆔</span>
+          CPF
+        </div>
+        <div class="field-value">{{cpf}}</div>
+      </div>
+      {{/cpf}}
+      
+      <!-- Campo: Data de Nascimento (condicional) -->
+      {{#data_nascimento}}
+      <div class="field-group">
+        <div class="field-label">
+          <span class="field-icon">🎂</span>
+          Data de Nascimento
+        </div>
+        <div class="field-value">{{data_nascimento}}</div>
+      </div>
+      {{/data_nascimento}}
+      
+      <!-- Campo: Curso de Interesse (condicional) -->
+      {{#curso_interesse}}
+      <div class="field-group">
+        <div class="field-label">
+          <span class="field-icon">📚</span>
+          Curso de Interesse
+        </div>
+        <div class="field-value">{{curso_interesse}}</div>
+      </div>
+      {{/curso_interesse}}
+      
+      <!-- Campo: Mensagem (condicional) -->
+      {{#mensagem}}
+      <div class="field-group">
+        <div class="field-label">
+          <span class="field-icon">💬</span>
+          Mensagem
+        </div>
+        <div class="field-value">{{mensagem}}</div>
+      </div>
+      {{/mensagem}}
+      
+      <div class="divider"></div>
+      
+      <!-- Informações Extras (JSON) -->
+      <div class="extra-info">
+        <div class="extra-info-title">
+          <span>ℹ️</span>
+          Dados Completos (JSON)
+        </div>
+        <div class="extra-info-content">{{campos_extras}}</div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-title">🎸 Rockfeller Language Center</div>
+      <div class="footer-subtitle">Transformando vidas através da educação</div>
+      
+      <div class="reply-instruction">
+        <strong>📨 Importante:</strong> Responda ao aluno através do email:
+        <br>
+        <a href="mailto:{{reply_to}}" class="reply-email">{{reply_to}}</a>
+      </div>
+      
+      <div class="footer-info">
+        Este é um email automático gerado pelo formulário de matrícula do site.<br>
+        Por favor, entre em contato com o aluno o mais breve possível.<br>
+        <br>
+        <small>© 2024 Rockfeller Language Center - Todos os direitos reservados</small>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

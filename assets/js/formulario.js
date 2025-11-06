@@ -1,4 +1,5 @@
 export { formularioHtml };
+import CONFIG from './config.js';
 
 function formularioHtml(formularioobj) {
   // Segurança: caso não haja dados
@@ -13,19 +14,13 @@ function formularioHtml(formularioobj) {
   const barraTop = document.createElement("div");
   barraTop.classList.add("barra_decorativa");
 
-  // Botão "Seja um Rocker!"
-  const botaoRocker = document.createElement("button");
-  botaoRocker.classList.add("botao_seja_rocker");
-  botaoRocker.textContent = "Seja um Rocker!";
-
-  // Barra decorativa inferior do botão
-  const barraBottom = document.createElement("div");
-  barraBottom.classList.add("barra_decorativa");
-
   // Título
   const titulo = document.createElement("h1");
   titulo.classList.add("titulo_formulario");
   titulo.textContent = formularioobj.title || "Matricule-se";
+
+  const bar_title= document.createElement("div");
+  bar_title.classList.add("bar_title");
 
   // Container do formulário (fundo amarelo)
   const formContainer = document.createElement("div");
@@ -88,9 +83,8 @@ function formularioHtml(formularioobj) {
 
   // Montar tudo
   containerFormulario.appendChild(barraTop);
-  containerFormulario.appendChild(botaoRocker);
-  containerFormulario.appendChild(barraBottom);
   containerFormulario.appendChild(titulo);
+  containerFormulario.appendChild(bar_title);
   containerFormulario.appendChild(formContainer);
   containerFormulario.appendChild(barraFinal1);
   containerFormulario.appendChild(barraFinal2);
@@ -142,10 +136,95 @@ function criarCampo(field) {
   input.name = field.label.toLowerCase().replace(/\s+/g, "_").replace(/[^a-z0-9_]/g, "");
   input.required = field.required || false;
 
+  // Aplicar máscara se necessário
+  aplicarMascara(input, field);
+
   campoContainer.appendChild(label);
   campoContainer.appendChild(input);
 
   return campoContainer;
+}
+
+function aplicarMascara(input, field) {
+  // Detectar tipo de máscara baseado no label ou tipo
+  const label = field.label.toLowerCase();
+  
+  if (label.includes("telefone") || label.includes("celular") || label.includes("whatsapp")) {
+    input.addEventListener("input", mascaraTelefone);
+    input.maxLength = 15;
+  } else if (label.includes("cpf")) {
+    input.addEventListener("input", mascaraCPF);
+    input.maxLength = 14;
+  } else if (label.includes("cep")) {
+    input.addEventListener("input", mascaraCEP);
+    input.maxLength = 9;
+  } else if (field.type === "date" || label.includes("data") || label.includes("nascimento")) {
+    if (field.type !== "date") {
+      input.addEventListener("input", mascaraData);
+      input.maxLength = 10;
+      input.placeholder = "dd/mm/aaaa";
+    }
+  } else if (label.includes("rg")) {
+    input.addEventListener("input", mascaraRG);
+    input.maxLength = 12;
+  }
+}
+
+function mascaraTelefone(e) {
+  let valor = e.target.value.replace(/\D/g, "");
+  
+  if (valor.length <= 10) {
+    // Telefone fixo: (99) 9999-9999
+    valor = valor.replace(/^(\d{2})(\d)/g, "($1) $2");
+    valor = valor.replace(/(\d{4})(\d)/, "$1-$2");
+  } else {
+    // Celular: (99) 99999-9999
+    valor = valor.replace(/^(\d{2})(\d)/g, "($1) $2");
+    valor = valor.replace(/(\d{5})(\d)/, "$1-$2");
+  }
+  
+  e.target.value = valor;
+}
+
+function mascaraCPF(e) {
+  let valor = e.target.value.replace(/\D/g, "");
+  
+  // 999.999.999-99
+  valor = valor.replace(/(\d{3})(\d)/, "$1.$2");
+  valor = valor.replace(/(\d{3})(\d)/, "$1.$2");
+  valor = valor.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+  
+  e.target.value = valor;
+}
+
+function mascaraCEP(e) {
+  let valor = e.target.value.replace(/\D/g, "");
+  
+  // 99999-999
+  valor = valor.replace(/(\d{5})(\d)/, "$1-$2");
+  
+  e.target.value = valor;
+}
+
+function mascaraData(e) {
+  let valor = e.target.value.replace(/\D/g, "");
+  
+  // dd/mm/aaaa
+  valor = valor.replace(/(\d{2})(\d)/, "$1/$2");
+  valor = valor.replace(/(\d{2})(\d)/, "$1/$2");
+  
+  e.target.value = valor;
+}
+
+function mascaraRG(e) {
+  let valor = e.target.value.replace(/\D/g, "");
+  
+  // 99.999.999-9
+  valor = valor.replace(/(\d{2})(\d)/, "$1.$2");
+  valor = valor.replace(/(\d{3})(\d)/, "$1.$2");
+  valor = valor.replace(/(\d{3})(\d{1})$/, "$1-$2");
+  
+  e.target.value = valor;
 }
 
 function formatarSubtitulo(texto) {
@@ -155,22 +234,78 @@ function formatarSubtitulo(texto) {
     .replace("suas informações estão seguras", "<strong>suas informações estão seguras</strong>");
 }
 
-function handleFormSubmit(form, mensagemContainer, formularioobj) {
+async function handleFormSubmit(form, mensagemContainer, formularioobj) {
   // Coletar dados do formulário
   const formData = new FormData(form);
   const dados = Object.fromEntries(formData);
 
   console.log("Dados do formulário:", dados);
 
-  // Simular envio (aqui você pode adicionar lógica real de envio)
+  // Mostrar estado de carregamento
   mensagemContainer.style.display = "block";
-  mensagemContainer.classList.remove("mensagem_erro");
-  mensagemContainer.classList.add("mensagem_sucesso");
-  mensagemContainer.textContent = formularioobj.successMessage || "Mensagem enviada com sucesso!";
+  mensagemContainer.classList.remove("mensagem_erro", "mensagem_sucesso");
+  mensagemContainer.textContent = "Enviando...";
 
-  // Limpar formulário após 2 segundos
-  setTimeout(() => {
-    form.reset();
-    mensagemContainer.style.display = "none";
-  }, 3000);
+  try {
+    // Inicializar EmailJS se ainda não foi inicializado
+    if (typeof emailjs !== 'undefined' && CONFIG.EMAILJS.PUBLIC_KEY) {
+      emailjs.init(CONFIG.EMAILJS.PUBLIC_KEY);
+    } else {
+      throw new Error("EmailJS não configurado. Por favor, adicione sua PUBLIC_KEY no arquivo config.js");
+    }
+
+    // Preparar template params com design do app
+    const templateParams = {
+      to_name: "Equipe Rockfeller",
+      from_name: dados.nome || "Não informado",
+      reply_to: dados.email || "email@nao-informado.com",
+      telefone: dados.telefone || dados.celular || dados.whatsapp || "Não informado",
+      cpf: dados.cpf || "",
+      data_nascimento: dados.data_nascimento || dados.data_de_nascimento || "",
+      curso_interesse: dados.curso || dados.curso_de_interesse || "",
+      mensagem: dados.mensagem || "",
+      // Campos adicionais que podem estar no formulário
+      campos_extras: JSON.stringify(dados, null, 2)
+    };
+
+    // Enviar email usando EmailJS
+    const response = await emailjs.send(
+      CONFIG.EMAILJS.SERVICE_ID,
+      CONFIG.EMAILJS.TEMPLATE_ID,
+      templateParams
+    );
+
+    console.log("Email enviado com sucesso!", response);
+
+    // Mostrar mensagem de sucesso
+    mensagemContainer.classList.remove("mensagem_erro");
+    mensagemContainer.classList.add("mensagem_sucesso");
+    mensagemContainer.textContent = formularioobj.successMessage || "Mensagem enviada com sucesso! Em breve entraremos em contato.";
+
+    // Limpar formulário após 3 segundos
+    setTimeout(() => {
+      form.reset();
+      mensagemContainer.style.display = "none";
+    }, 3000);
+
+  } catch (error) {
+    console.error("Erro ao enviar email:", error);
+
+    // Mostrar mensagem de erro
+    mensagemContainer.classList.remove("mensagem_sucesso");
+    mensagemContainer.classList.add("mensagem_erro");
+    
+    let mensagemErro = "Erro ao enviar. Por favor, tente novamente.";
+    
+    if (error.message && error.message.includes("PUBLIC_KEY")) {
+      mensagemErro = "Serviço de email não configurado. Entre em contato pelo telefone.";
+    }
+    
+    mensagemContainer.textContent = mensagemErro;
+
+    // Esconder mensagem de erro após 5 segundos
+    setTimeout(() => {
+      mensagemContainer.style.display = "none";
+    }, 5000);
+  }
 }

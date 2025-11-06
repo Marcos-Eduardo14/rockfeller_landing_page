@@ -1,0 +1,328 @@
+/* ======================================= */
+/* --- Definição das Fontes Locais --- */
+/* ======================================= */
+@font-face {
+  font-family: 'Verlag';
+  src: url('../fonts/Verlag-Black.otf') format('opentype');
+  font-weight: 900; 
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Verlag';
+  src: url('../fonts/Verlag-Bold.otf') format('opentype');
+  font-weight: 700; 
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Verlag';
+  src: url('../fonts/Verlag-Book.otf') format('opentype');
+  font-weight: 400; /* 'Book' é o peso normal/regular (400 ou 450) */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- Variáveis de Cor --- */
+:root {
+  --color-bg-dark: #0A2647;
+  --color-text-light: #FFFFFF;
+  --color-text-dark: #144272;
+  --color-author: #0A2647;
+  --color-gold: #FDB827;
+  --color-gold-faded: rgba(253, 184, 39, 0.15);
+  --color-light-faded: rgba(255, 255, 255, 0.3);
+  --color-light-hover: rgba(255, 255, 255, 0.5);
+  --color-card-bg: #FFFFFF;
+}
+
+/* --- Estilos Globais --- */
+body {
+    font-family: 'Verlag', sans-serif;
+    font-weight: 400; /* Padrão 'Book' */
+    margin: 0;
+    line-height: 1.5; 
+}
+
+/* --- Seção de Depoimentos --- */
+.testimonials-section {
+  margin-top: 50px;
+  background-color: var(--color-bg-dark);
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden; 
+}
+
+.testimonials-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2; 
+}
+
+/* --- Título --- */
+.testimonials-title {
+  color: var(--color-text-light);
+  font-family: 'Verlag', sans-serif; 
+  font-weight: 900;         
+  font-size: 80px;         
+  line-height: 1.0;        
+  margin-bottom: 60px;
+  max-width: 526px;  
+  margin-top: 0; /* Correção do espaço extra */
+  
+  /* *** MUDANÇA AQUI *** */
+  /* Impede que o texto seja selecionado */
+  user-select: none;
+}
+
+/* --- Layout do Carrossel --- */
+
+/* Wrapper dos depoimentos (Alinha Setas e Viewport) */
+.testimonials-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* A "Janela" (Viewport) - O que esconde os cards */
+.testimonials-viewport {
+  flex: 1; /* Ocupa o espaço disponível entre as setas */
+  overflow: hidden; /* A MÁGICA! Esconde os cards fora da "janela" */
+  /* Removemos o padding que não funcionou */
+}
+
+/* Container dos cards (O que se move) */
+.testimonials-container {
+  display: flex;
+  gap: 30px;
+  
+  /* Animação de slide mais suave */
+  transition: transform 0.6s ease-out;
+}
+
+
+/* --- Card Individual (CORREÇÃO DO ZOOM) --- */
+
+/* O .testimonial-card agora é SÓ o container flex */
+.testimonial-card {
+  /* Tamanho para 3 cards */
+  flex-basis: calc((100% / 3) - (30px * 2 / 3));
+  flex-shrink: 0; 
+  
+  /* Garante a fonte nos cards */
+  font-family: 'Verlag', sans-serif;
+  
+  /* Adiciona padding para o card interno ter espaço para crescer */
+  /* Isso dá o espaço para o zoom sem ser cortado */
+  padding: 10px; /* Ajuste este valor se 10px for muito ou pouco */
+}
+
+/* O .testimonial-card__content é quem tem o visual */
+.testimonial-card__content {
+  background-color: var(--color-card-bg);
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  min-height: 300px;
+  
+  /* Animação suave para o zoom do :hover */
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; 
+  
+  /* *** MUDANÇA AQUI *** */
+  /* Força todos os cards a terem a mesma altura */
+  height: 100%;
+  box-sizing: border-box; /* Garante que o padding seja incluído no height */
+}
+
+/* O hover é aplicado no card "pai", mas o efeito vai no "__content" (filho) */
+.testimonial-card:hover .testimonial-card__content {
+    /* Aplica o "leve zoom" */
+    transform: scale(1.04);
+    
+    /* Opcional: Aumenta a sombra para dar "profundidade" */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    
+    /* Garante que o card em hover fique na frente dos outros */
+    z-index: 10; 
+}
+
+
+.testimonial-author {
+  color: var(--color-author);
+  font-size: 18px;
+  font-weight: 700; /* Usa 'Verlag-Bold.otf' */
+  margin: 0;
+}
+
+.testimonial-text {
+  color: var(--color-text-dark);
+  font-size: 15px;
+  line-height: 1.6;
+  flex: 1; 
+  margin: 0;
+  /* Usa 'Verlag-Book.otf' (400) herdado do body/card */
+}
+
+/* --- Estrelas --- */
+.testimonial-stars {
+  display: flex;
+  gap: 4px;
+}
+
+.star {
+  color: var(--color-gold);
+  font-size: 20px;
+}
+
+/* --- Setas de navegação --- */
+.nav-arrow {
+  background-color: transparent;
+  border: none;
+  color: var(--color-text-light);
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+  z-index: 3; 
+}
+
+.nav-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-arrow svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* --- Indicadores de paginação --- */
+.testimonials-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-light-faded);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: var(--color-gold);
+}
+
+.dot:hover {
+  background-color: var(--color-light-hover);
+}
+
+/* --- Círculos decorativos (Fundo) --- */
+.decorative-circles {
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  /* Área total do padrão */
+  width: 40%;
+  height: 70%; 
+  
+  /* Imagem de 1 logo */
+  background-image: url('../images/logo -03.png');
+  /* Repetir */
+  background-repeat: repeat; 
+  /* Tamanho de 1 logo (do Figma) */
+  background-size: 33.21px 34.13px; 
+  
+  opacity: 0.2; 
+  pointer-events: none; 
+  z-index: 1; 
+}
+
+/* --- Responsividade --- */
+
+/* Tablets (Exibe 2 cards) */
+@media (max-width: 1024px) {
+  .testimonial-card {
+    /* Mostra 2 cards por vez */
+    flex-basis: calc((100% / 2) - (30px * 1 / 2));
+  }
+  .testimonials-title {
+    font-size: 60px;
+  }
+}
+
+/* Mobile (Exibe 1 card) */
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 60px 20px;
+  }
+  .testimonials-title {
+    font-size: 48px; 
+    margin-bottom: 40px;
+    max-width: 100%; 
+  }
+  .testimonials-wrapper {
+    gap: 15px;
+  }
+  .testimonials-container {
+    gap: 15px; 
+  }
+  .testimonial-card {
+    /* Mostra 1 card por vez */
+    flex-basis: 100%;
+    min-height: auto; 
+    padding: 10px; /* Mantém o padding do "respiro" */
+  }
+  
+  /* Ajusta o padding interno em mobile */
+  .testimonial-card__content {
+    padding: 25px;
+    height: auto; /* Em mobile, deixa a altura ser automática */
+  }
+  
+  .nav-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Mobile Pequeno */
+@media (max-width: 480px) {
+  .testimonials-section {
+    padding: 40px 15px;
+  }
+  .testimonials-title {
+    font-size: 40px;
+  }
+  .testimonial-card {
+     padding: 5px; /* Respiro menor */
+  }
+  .testimonial-card__content {
+     padding: 20px; /* Padding interno menor */
+     height: auto; /* Em mobile, deixa a altura ser automática */
+  }
+  .nav-arrow {
+    width: 36px;
+    height: 36px;
+  }
+  .nav-arrow svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+

@@ -11,6 +11,9 @@ export function nossoscursosHtml(nossoscursosobj) {
   title.classList.add("title_cursos");
   title.textContent = nossoscursosobj.title || "Nossos Cursos";
 
+  const bar_init_two = document.createElement("div");
+  bar_init_two.classList.add("bar_title");
+
   const subtitle = document.createElement("h2");
   subtitle.classList.add("subtitle_cursos");
   subtitle.textContent = nossoscursosobj.subtitle || "O curso ideal para você está aqui!";
@@ -18,9 +21,35 @@ export function nossoscursosHtml(nossoscursosobj) {
   const cont_nossos_cursos = document.createElement("section");
   cont_nossos_cursos.classList.add("nossos-cursos");
 
+  const botaoduvidas = document.createElement("button");
+  botaoduvidas.classList.add("botao_duvidas");
+  botaoduvidas.textContent = "Quer saber mais?";
+  botaoduvidas.style.display = "block";
+  botaoduvidas.style.margin = "4rem auto 0 auto";
+  botaoduvidas.setAttribute("data-tooltip", "Fale Conosco!")
+
+  document.body.appendChild(botaoduvidas);
+
+  botaoduvidas.addEventListener("click", () => {
+    const num_whats = "5545998546395"
+    const mensagem = "Olá! Encontrei o site da Rockfeller Toledo e gostaria de saber mais sobre os cursos que vocês oferecem. Poderiam me ajudar com algumas dúvidas? 🚀";
+    const link = `https://api.whatsapp.com/send?phone=${num_whats}&text=${encodeURIComponent(mensagem)}`;
+      window.open (link, "_blank");
+    });
+
+  // Botão "Seja um Rocker!"
+  const botaoRocker = document.createElement("button");
+  botaoRocker.classList.add("botao_seja_rocker");
+  botaoRocker.textContent = "Seja um Rocker!";
+  botaoRocker.addEventListener("click", () => {
+   const destino = document.querySelector("#Matricule-se");
+  if (destino) {
+    destino.scrollIntoView({ behavior: "smooth" });
+  }
+});
+
   const cards = document.createElement("div");
   cards.classList.add("cards_cursos");
-
   if (nossoscursosobj.courseCategories && Array.isArray(nossoscursosobj.courseCategories)) {
     nossoscursosobj.courseCategories.forEach(curso => {
       const card = document.createElement("div");
@@ -28,7 +57,7 @@ export function nossoscursosHtml(nossoscursosobj) {
 
       // imagens de fundo
       const fundo_alunos = gerarImagem(curso.backgroundImage.asset._ref) || "";
-      let fundo_livros= "";
+      let fundo_livros = "";
 
       if (curso.backgroundImageBooks?.asset?._ref) {
         fundo_livros = gerarImagem(curso.backgroundImageBooks.asset._ref) || "";
@@ -37,14 +66,16 @@ export function nossoscursosHtml(nossoscursosobj) {
       // aplica as imagens juntas como background
       if (fundo_livros) {
         card.style.backgroundImage = `url(${fundo_livros}), url(${fundo_alunos})`;
-        card.style.backgroundPosition = "bottom right, center";
-        card.style.backgroundSize = "40%, contain";
-        card.style.backgroundRepeat = "no-repeat, no-repeat";
+        card.style.backgroundPosition = "right 25px top 50%, center";
+        card.style.backgroundSize = "38%, contain";
+        card.style.backgroundRepeat = "no-repeat";
+        card.classList.add("card_with_double_bg");
       } else {
         card.style.backgroundImage = `url(${fundo_alunos})`;
         card.style.backgroundSize = "contain";
         card.style.backgroundPosition = "center";
         card.style.backgroundRepeat = "no-repeat";
+        card.classList.add("card_with_single_bg");
       }
 
       // textos
@@ -72,8 +103,12 @@ export function nossoscursosHtml(nossoscursosobj) {
   }
 
   cont_nossos_cursos.appendChild(cards);
+  cont_nossos_cursos.appendChild(botaoduvidas); 
+  cont_nossos_cursos.appendChild(botaoRocker);
+  
   container.appendChild(bar_init);
   container.appendChild(title);
+  container.appendChild(bar_init_two);
   container.appendChild(subtitle);
   container.appendChild(cont_nossos_cursos);
 

@@ -19,35 +19,20 @@
   margin: 1rem 0;
 }
 
-/* Botão "Seja um Rocker!" */
-.botao_seja_rocker {
-  background-color: var(--azul_one);
-  color: var(--white);
-  font-family: var(--bold);
-  font-size: 20px;
-  padding: 1rem 3rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin: 1rem 0;
-}
-
-.botao_seja_rocker:hover {
-  background-color: var(--azul_two);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 63, 124, 0.3);
-}
-
 /* Título */
 .titulo_formulario {
   font-family: var(--black);
   font-size: 48px;
   color: var(--azul_one);
-  margin: 2rem 0 1rem 0;
   text-align: center;
-  border-bottom: 8px solid var(--amarelo_tree);
-  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.bar_title {
+  background-color: var(--amarelo_tree);
+  padding: 5px 5px;
+  width: 20%;
+  min-height: 5px;
 }
 
 /* Container do formulário (fundo amarelo) */
@@ -192,11 +177,6 @@
     height: 2px;
   }
 
-  .botao_seja_rocker {
-    font-size: 16px;
-    padding: 0.8rem 2rem;
-  }
-
   .titulo_formulario {
     font-size: clamp(2rem, 5vw, 3rem);
     border-bottom-width: 5px;
@@ -259,11 +239,6 @@
   .campo_input {
     font-size: 18px;
     padding: 1rem 1.2rem;
-  }
-
-  .botao_seja_rocker {
-    font-size: 22px;
-    padding: 1.2rem 3.5rem;
   }
 
   .botao_enviar {
