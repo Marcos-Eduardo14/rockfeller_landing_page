@@ -1,7 +1,7 @@
 import { carregardados, filtrarsecao } from "./fetch.js";
 import { nossoscursosHtml } from "./nossoscursos.js"
 import { headerHtml } from "./header.js";
-import { footerHtml } from "./footer.js";
+//import { footerHtml } from "./footer.js";
 import { sobrenosHtml } from "./sobrenos.js";
 import { heroHtml } from "./hero.js";
 import { carrosselHero } from "./carrossel.js"
@@ -18,21 +18,15 @@ let headerhtml = headerHtml(secoes.header);
 let herohtml = heroHtml(secoes.hero);
 let sobrenoshtml = sobrenosHtml(secoes.secaosobre);
 let nossoscursoshtml = nossoscursosHtml(secoes.nossoscursos);
-<<<<<<< HEAD
 
 document.getElementById("container_sessao_hero").appendChild(herohtml);
 document.getElementById("container_nossos_cursos").appendChild(nossoscursoshtml);
-document.getElementById("container_footer").appendChild(footerhtml);
+//document.getElementById("container_footer").appendChild(footerhtml);
 
 
 let formulariohtml = formularioHtml(secoes.formulario);
 
-let comentarioshtml = comentariosHtml(secoes.coments);
-
-=======
-let formulariohtml = formularioHtml(secoes.formulario);
->>>>>>> 249081ef8a762a2699abbe3cdb2a6de7457d3a54
-let footerhtml = footerHtml(secoes.footer);
+//let footerhtml = footerHtml(secoes.footer);
 
 
 // --- Bloco de Teste para Duplicar Cards (NOVO) ---
