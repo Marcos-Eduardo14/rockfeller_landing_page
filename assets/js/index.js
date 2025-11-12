@@ -1,7 +1,7 @@
 import { carregardados, filtrarsecao } from "./fetch.js";
 import { nossoscursosHtml } from "./nossoscursos.js"
 import { headerHtml } from "./header.js";
-import { footerHtml } from "./footer.js";
+//import { footerHtml } from "./footer.js";
 import { sobrenosHtml } from "./sobrenos.js";
 import { heroHtml } from "./hero.js";
 import { carrosselHero } from "./carrossel.js"
@@ -27,7 +27,6 @@ document.getElementById("container_footer").appendChild(footerhtml);
 
 
 let formulariohtml = formularioHtml(secoes.formulario);
-
 //let footerhtml = footerHtml(secoes.footer);
 
 let dadosComentarios = secoes.coments;
