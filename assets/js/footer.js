@@ -1,5 +1,5 @@
 
-document.addEventListener("DOMContentLoaded", function() {
+export const footerHtml = (() => {
   const footer = document.createElement("footer");
 
   footer.innerHTML = `
@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
       justify-content: center;
       padding: 20px 10px;
       font-family: 'Arial', sans-serif;
-      position: fixed;
       bottom: 0;
       left: 0;
       width: 100%;
@@ -34,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
   `;
 
-  document.body.appendChild(footer);
 
  
   const links = footer.querySelectorAll("a");
@@ -42,4 +40,5 @@ document.addEventListener("DOMContentLoaded", function() {
     link.addEventListener("mouseover", () => link.style.color = "#00bfff");
     link.addEventListener("mouseout", () => link.style.color = "#f1f1f1");
   });
+  return footer;
 });

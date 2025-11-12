@@ -1,7 +1,7 @@
 import { carregardados, filtrarsecao } from "./fetch.js";
 import { nossoscursosHtml } from "./nossoscursos.js"
 import { headerHtml } from "./header.js";
-////import { footerHtml } from "./footer.js";
+//import { footerHtml } from "./footer.js";
 import { sobrenosHtml } from "./sobrenos.js";
 import { heroHtml } from "./hero.js";
 import { carrosselHero } from "./carrossel.js"
@@ -18,9 +18,11 @@ let headerhtml = headerHtml(secoes.header);
 let herohtml = heroHtml(secoes.hero);
 let sobrenoshtml = sobrenosHtml(secoes.secaosobre);
 let nossoscursoshtml = nossoscursosHtml(secoes.nossoscursos);
+let footerhtml = footerHtml(secoes.footer);
 
 document.getElementById("container_sessao_hero").appendChild(herohtml);
 document.getElementById("container_nossos_cursos").appendChild(nossoscursoshtml);
+document.getElementById("container_footer").appendChild(footerhtml);
 //document.getElementById("container_footer").appendChild(footerhtml);
 
 
