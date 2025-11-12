@@ -243,8 +243,8 @@ body {
   background-color: var(--azul_tree);
   color: var(--white);
   font-family: var(--bold);
-  font-size: 15px;
-  padding: 10px 20px;
+  font-size: 17px;
+  padding: 20px 40px;
   border: none;
   border-radius: 6px;
   cursor: pointer;

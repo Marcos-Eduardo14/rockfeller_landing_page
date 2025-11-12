@@ -21,47 +21,21 @@ let nossoscursoshtml = nossoscursosHtml(secoes.nossoscursos);
 let formulariohtml = formularioHtml(secoes.formulario);
 let footerhtml = footerHtml(secoes.footer);
 
-
-// --- Bloco de Teste para Duplicar Cards (NOVO) ---
-// 1. Pega os dados originais
 let dadosComentarios = secoes.coments;
 
-// 2. Para não alterar o objeto original, criamos uma cópia
-// (JSON.parse(JSON.stringify(...)) é um truque para copiar 100%)
 let dadosCopia = JSON.parse(JSON.stringify(dadosComentarios)); 
     
-// 3. Duplica os depoimentos dentro da cópia
-// (Agora o array 'testimonials' terá 6 itens em vez de 3)
-// (Verifique se 'testimonials' existe antes de duplicar)
 if (dadosCopia && dadosCopia.testimonials) {
     dadosCopia.testimonials = [
         ...dadosCopia.testimonials, 
         ...dadosCopia.testimonials
     ];
 }
-// --- Fim do Bloco de Teste ---
 
-
-// 4. Passamos a cópia (com 6 cards) para sua função
 let comentarioshtml = comentariosHtml(dadosCopia); 
 
-
-// --- 2. ADICIONAR TODOS OS COMPONENTES NA PÁGINA ---
-// (Certifique-se que você tem o <div id="container_header"></div> no seu html)
-// document.getElementById("container_header").appendChild(headerhtml);
-
 document.getElementById("container_sessao_hero").appendChild(herohtml);
-carrosselHero(); // Chama a lógica do carrossel do hero
-
-// (Certifique-se que você tem o <div id="container_sobrenos"></div> no seu html)
-// document.getElementById("container_sobrenos").appendChild(sobrenoshtml);
-
+carrosselHero();
 document.getElementById("container_nossos_cursos").appendChild(nossoscursoshtml);
 document.getElementById("container_formulario").appendChild(formulariohtml);
-
 document.getElementById("container_comentarios").appendChild(comentarioshtml);
-
-// (Comentado para evitar o erro de 'appendChild' que vimos)
-// document.getElementById("container_footer").appendChild(footerhtml);
-
-console.log(nossoscursoshtml);

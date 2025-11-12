@@ -7,6 +7,8 @@ async function carregardados(){
     return dados;
 }
 
+
+
 function filtrarsecao(dadosbrutos){
    let secoes = {
     header : null,
