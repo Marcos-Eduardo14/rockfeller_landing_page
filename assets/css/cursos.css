@@ -1,0 +1,548 @@
+/* CORES */
+:root {
+    --azul_one: #003F7C;
+    --azul_two: #002147;
+    --azul_tree:#0068DF;
+    --azul_four:#5995FF;
+
+    --offwhite: #EDEBE6;
+    --white: #ffff;
+    
+    --amarelo_one: #FC8A18;
+    --amarelo_two: #FF9A00;
+    --amarelo_tree:#FFC033;
+
+    --light: "Verlag-Light";
+    --bold: "Verlag-Bold";
+    --black: "Verlag-Black";
+}
+
+/* FONTES */
+@font-face {
+  font-family: "Verlag-Light";
+  src: url("/assets/fonts/Verlag-Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verlag-Bold";
+  src: url("/assets/fonts/Verlag-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verlag-Black";
+  src: url("/assets/fonts/Verlag-Black.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--offwhite);
+}
+
+/* NOSSOS CURSOS */
+
+/* Container Base */
+#container_nossos_cursos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Container cards */
+.nossos-cursos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+
+/* Barra de Início */
+.bar {
+  margin: 5rem auto 0 auto;
+  margin-top: 10rem;
+
+  background-color: var(--amarelo_tree);
+  padding: 5px 5px;
+  width: 20%;
+  min-height: 5px;
+}
+
+/* Barra - baixo do título */
+.bar_title {
+  background-color: var(--amarelo_tree);
+  padding: 5px 5px;
+  width: 20%;
+  min-height: 5px;
+}
+
+/* Título - Nossos Cursos */
+.title_cursos {
+  margin-top: 10rem;
+  font-family: var(--black);
+  font-size: 45px;
+  color: var(--azul_one);
+}
+
+/* Frase de Ação */
+.subtitle_cursos {
+  margin-top: 5rem;
+
+  font-family: var(--light);
+  font-size: 25px;
+  color: var(--azul_two);
+
+  background-color: #FFC033;
+  display: inline-block;
+  padding: 8px 5rem 8px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle_cursos:hover {
+  user-select: none;
+  transition: all 0.5s ease;
+  background-color: var(--azul_two);
+  color: var(--white);
+}
+
+/* Card */
+.cards_cursos {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilização Card */
+
+.curso_card {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+
+  user-select: none;
+  background-color: var(--azul_four);
+  border-radius: 10px;
+
+  padding: 4rem 12rem 6rem 4rem;
+  
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curso_card:hover {
+  transform: scale(0.99); 
+}
+
+/* Textos Card */
+.curso_conteudo {
+  justify-content: center;
+  gap: 0;
+  align-items: center;
+  width: 42rem;
+}
+
+/* Classes específicas para controle de background */
+.card_with_double_bg {
+  background-size: 38%, contain;
+  background-position: right 25px top 50%, center;
+}
+
+.card_with_single_bg {
+  background-size: contain;
+  background-position: center;
+}
+
+/* Estilização de Textos: */
+.curso_card h1 {
+  font-family: var(--black);
+  color: var(--azul_one);
+
+  font-size: 70px;
+}
+
+.curso_card h3 {
+  font-family: var(--bold);
+  color: var(--white);
+
+  font-size: 40px;
+  max-width: 450px;
+}
+
+.curso_card p {
+  font-family: var(--light);
+  color: var(--white);
+
+  font-size: 20px;
+  max-width: 375px;
+}
+
+/* Estilização - Botão de Dúvidas */
+.botao_duvidas {
+  background-color: var(--azul_tree);
+  color: var(--white);
+  font-family: var(--bold);
+  font-size: 20px;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 1rem 0;
+  user-select: none;
+}
+
+.botao_duvidas:hover {
+  background-color: var(--azul_one);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: var(--amarelo_tree)
+}
+
+.botao_duvidas::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%) translateY(15px);
+  background-color: var(--amarelo_tree);
+  color: var(--azul_one);
+  padding: 10px 20px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  font-size: 15px;
+}
+
+.botao_duvidas:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.botao_duvidas:hover::before {
+  opacity: 1;
+}
+
+/* Botão "Seja um Rocker!" */
+.botao_seja_rocker {
+  background-color: var(--azul_tree);
+  color: var(--white);
+  font-family: var(--bold);
+  font-size: 17px;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 5rem 0;
+}
+
+.botao_seja_rocker:hover {
+  background-color: var(--azul_one);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade para Monitores */
+@media screen and (min-width: 1920px) {
+  #container_nossos_cursos {
+    max-width: 2400px;
+  }
+
+.curso_card {
+  margin-top: 2rem;
+
+  background-color: var(--azul_four);
+  border-radius: 10px;
+
+  padding: 5rem 15rem 6rem 5rem;
+}
+
+.subtitle_cursos {
+  margin-top: 5rem;
+
+  font-family: var(--light);
+  font-size: 25px;
+  color: var(--azul_two);
+
+  background-color: #FFC033;
+  display: inline-block;
+  padding: 8px 5rem 8px;
+  border-radius: 5px;
+}
+
+.botao_seja_rocker {
+  font-size: 22px;
+  padding: 1.2rem 3.5rem;
+}
+
+}
+
+/* Responsividade para Tablets */
+@media (min-width: 768px) and (max-width: 1000px) {
+  .bar {
+    margin-top: 8rem;
+    width: 25%;
+  }
+
+  .title_cursos {
+    margin-top: 8rem;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    text-align: center;
+  }
+
+  .subtitle_cursos {
+    margin-top: 2rem;
+    padding: 0.8rem 2.5rem;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    max-width: 85vw;
+  }
+
+  .cards_cursos {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .curso_card {
+    padding: 3rem 6rem 4rem 3rem;
+  }
+
+  .card_with_double_bg {
+    background-size: 30%, contain !important;
+    background-position: right 15px top 40%, center !important;
+  }
+
+  .card_with_single_bg {
+    background-size: contain !important;
+    background-position: center !important;
+  }
+
+  .curso_conteudo {
+    width: 100%;
+    max-width: 28rem;
+  }
+
+  .curso_card h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+  }
+
+  .curso_card h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    max-width: 350px;
+  }
+
+  .curso_card p {
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    max-width: 300px;
+  }
+}
+
+/* Responsividade para Mobile */
+@media (min-width: 320px) and (max-width: 1000px) {
+  .bar {
+    margin-top: 6rem;
+    width: 30%;
+  }
+
+  .title_cursos {
+    margin-top: 6rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    text-align: center;
+    border-bottom-width: 6px;
+  }
+
+  .subtitle_cursos {
+    margin-top: 1.5rem;
+    font-family: var(--light);
+    color: var(--azul_two);
+    background-color: #FFC033;
+    display: inline-block;
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    min-width: auto;
+    max-width: 90vw;
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
+  }
+
+  /* Container dos cards */
+  .cards_cursos {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  /* Cada card individual */
+  .curso_card {
+    margin-top: 1rem;
+    background-color: var(--azul_four);
+    border-radius: 10px;
+    padding: 1.5rem 1.5rem 8rem 1.5rem;
+    
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    min-height: 320px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    position: relative;
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+
+  /* Ajusta as imagens de fundo para mobile */
+  .card_with_double_bg {
+    background-size: 45%, cover !important;
+    background-position: right bottom 10px, center !important;
+  }
+
+  .card_with_single_bg {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  .curso_card:hover {
+    transform: scale(0.98);
+  }
+
+  /* Elementos internos do card */
+  .curso_card img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .curso_card h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+    word-wrap: break-word;
+    max-width: 100%;
+    line-height: 1.1;
+    margin-bottom: 0.2rem;
+  }
+
+  .curso_card h3 {
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    word-wrap: break-word;
+    max-width: 65%;
+    line-height: 1.2;
+  }
+
+  .curso_card p {
+    font-size: clamp(0.85rem, 3vw, 1rem);
+    word-wrap: break-word;
+    max-width: 75%;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .curso_conteudo {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Botão de dúvidas */
+  .botao_duvidas {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    padding: 0.8rem 2rem;
+    width: auto;
+    margin: 2rem auto 0 auto !important;
+  }
+
+  .botao_duvidas::after {
+    display: none;
+  }
+
+  .botao_seja_rocker {
+    font-size: 16px;
+    padding: 0.8rem 2rem;
+  }
+
+  /* Section container */
+  .nossos-cursos {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #container_nossos_cursos {
+    gap: 1rem;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+/* Ajuste específico para celulares pequenos */
+@media (min-width: 320px) and (max-width: 480px) {
+  .curso_card {
+    padding: 1rem 1rem 7rem 1rem;
+    gap: 0.6rem;
+    min-height: 280px;
+  }
+
+  .card_with_double_bg {
+    background-size: 40%, cover !important;
+    background-position: right bottom 5px, center !important;
+  }
+
+  .card_with_single_bg {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  .curso_card h1 {
+    font-size: clamp(1.8rem, 7vw, 2.5rem);
+  }
+
+  .curso_card h3 {
+    max-width: 70%;
+    font-size: clamp(1rem, 4vw, 1.3rem);
+  }
+
+  .curso_card p {
+    font-size: clamp(0.8rem, 3.5vw, 0.95rem);
+    line-height: 1.4;
+    max-width: 80%;
+  }
+
+  .botao_duvidas {
+    font-size: 0.85rem;
+    padding: 0.7rem 1.5rem;
+  }
+
+  .title_cursos {
+    font-size: clamp(1.3rem, 6vw, 1.8rem);
+  }
+
+  .subtitle_cursos {
+    font-size: clamp(0.85rem, 3.5vw, 1rem);
+    padding: 0.6rem 1rem;
+  }
+}

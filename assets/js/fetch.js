@@ -7,6 +7,8 @@ async function carregardados(){
     return dados;
 }
 
+
+
 function filtrarsecao(dadosbrutos){
    let secoes = {
     header : null,
@@ -17,7 +19,7 @@ function filtrarsecao(dadosbrutos){
     coments : null,
     footer : null
    } 
-    let header;
+   
     dadosbrutos.result.forEach(secao => {
         if(secao._type === "header"){
             secoes.header = secao;
