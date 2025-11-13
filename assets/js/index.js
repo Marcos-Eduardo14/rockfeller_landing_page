@@ -18,4 +18,17 @@ let sobrenoshtml = sobrenosHtml(secoes.secaosobre);
 let nossoscursoshtml = nossoscursosHtml(secoes.nossoscursos);
 let formulariohtml = formularioHtml(secoes.formulario);
 let comentarioshtml = comentariosHtml(secoes.coments);
+
+// Adiciona os elementos ao documento
+document.body.innerHTML = `
+    ${headerhtml}
+    ${herohtml}
+    ${sobrenoshtml}
+    ${nossoscursoshtml}
+    ${formulariohtml}
+    ${comentarioshtml}
+`;
 let footerhtml = footerHtml(secoes.footer);
+
+
+document.body.appendChild(headerhtml);

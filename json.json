@@ -1,0 +1,1922 @@
+{
+    "query": "*\n\n",
+    "result": [
+        {
+            "_createdAt": "2025-10-14T22:50:18Z",
+            "_id": "2799c4ad-6ef9-4ea2-8439-e82ce88c63f1",
+            "_rev": "OQ5DB7mgKWPtavdPuUHhrf",
+            "_type": "testimonialsSection",
+            "_updatedAt": "2025-10-14T22:54:54Z",
+            "showRatings": true,
+            "testimonials": [
+                {
+                    "_key": "175102d51baf",
+                    "_type": "testimonial",
+                    "authorName": "Teste",
+                    "quote": "“Ambiente acolhedor, profissionais excelentes e carismáticos, metodologia diferente do ensino “engessado” e aulas dinâmicas e interativas. Me formei na escola Rockfeller e hoje me sinto muito habituada com a língua inglesa, recomendo demais!!”\n",
+                    "rating": 5
+                },
+                {
+                    "_key": "0f761440f3f1",
+                    "_type": "testimonial",
+                    "authorName": "Teste 2",
+                    "quote": "“Escola com ótima estrutura, professores capacitados, e metodologia incrível! Estou amando. Super indico a Rockfeller Bagé – RS”",
+                    "rating": 5
+                },
+                {
+                    "_key": "2534e18109a1",
+                    "_type": "testimonial",
+                    "authorName": "Fabiano Braga",
+                    "quote": "“Ambiente muito bem preparado e aconchegante e atendimento excepcional!!! Ótima escola, dedicada ao ensino com seriedade e responsabilidade, minhas filhas são alunas e estão evoluindo muito bem no inglês e continuo indicando aos amigos e familiares.”",
+                    "rating": 5
+                }
+            ],
+            "title": "O que nossos Rockers dizem sobre nós"
+        },
+        {
+            "_createdAt": "2025-10-10T00:49:20Z",
+            "_id": "69b81834-505b-4990-86ce-1ac3e2d782f4",
+            "_rev": "6IWQ01OyQ2ez3UDKA6AqQm",
+            "_type": "heroSection",
+            "_updatedAt": "2025-10-21T13:48:48Z",
+            "mainImage": {
+                "_type": "image",
+                "asset": {
+                    "_ref": "image-e0eb6c2b3609e22141db41088c6fa721c30649b5-1433x591-png",
+                    "_type": "reference"
+                },
+                "crop": {
+                    "_type": "sanity.imageCrop",
+                    "bottom": 0,
+                    "left": 0,
+                    "right": 0,
+                    "top": 0
+                },
+                "hotspot": {
+                    "_type": "sanity.imageHotspot",
+                    "height": 1,
+                    "width": 1,
+                    "x": 0.5,
+                    "y": 0.5
+                }
+            }
+        },
+        {
+            "_createdAt": "2025-10-14T22:28:43Z",
+            "_id": "73ef7319-7dd3-4240-9330-4bbf08c6341a",
+            "_rev": "QLLGa7UcAanA0zQKc20AnD",
+            "_system": {
+                "base": {
+                    "id": "73ef7319-7dd3-4240-9330-4bbf08c6341a",
+                    "rev": "RScOoTQi8ImBQ8tlkuyLh1"
+                }
+            },
+            "_type": "coursesSection",
+            "_updatedAt": "2025-10-22T01:10:54Z",
+            "courseCategories": [
+                {
+                    "_key": "22945ec9f26c",
+                    "_type": "courseCategory",
+                    "backgroundImage": {
+                        "_type": "image",
+                        "asset": {
+                            "_ref": "image-eca63f835378ef6cd2d1c11fb58de0594efa75b4-497x721-png",
+                            "_type": "reference"
+                        }
+                    },
+                    "categoryName": "KIDS",
+                    "detailedDescription": "Aulas 100% em inglês com músicas, jogos e projetos imersivos. Aprendizado divertido e completo, em turmas organizadas por idade.",
+                    "mainDescription": "A experiência do seu filho com a Rockfeller"
+                },
+                {
+                    "_key": "3a889e41b7cb",
+                    "_type": "courseCategory",
+                    "backgroundImage": {
+                        "_type": "image",
+                        "asset": {
+                            "_ref": "image-ea60f627e4c31b987e91179a7aa14ee94bb43975-562x814-png",
+                            "_type": "reference"
+                        }
+                    },
+                    "categoryName": "TEENS",
+                    "detailedDescription": "Aprofundamento em inglês no estilo High School Americano, com foco em gramática, leitura, conversação e experiências imersivas como Cooking Class, filmes e músicas, além de preparação para vestibular e Enem.",
+                    "mainDescription": "A experiência dos alunos Teens dentro da Rockfeller",
+                    "materials": [
+                        {
+                            "_key": "3e73e860a265",
+                            "_type": "image",
+                            "asset": {
+                                "_ref": "image-0dacfb9cd61db7ba2488dd3e50adc48bd34009c7-541x636-png",
+                                "_type": "reference"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "_key": "e67800460030",
+                    "_type": "courseCategory",
+                    "backgroundImage": {
+                        "_type": "image",
+                        "asset": {
+                            "_ref": "image-89578fa48b428695282ef9982441f5301f3c6f71-670x845-png",
+                            "_type": "reference"
+                        }
+                    },
+                    "categoryName": "ADULTS",
+                    "detailedDescription": "Curso regular para jovens a partir de 15 anos, composto por 5 níveis semestrais. Cada semestre corresponde a um nível do Quadro Comum Europeu de Referência.",
+                    "mainDescription": "A experiência dos alunos Adults dentro da Rockfeller."
+                }
+            ],
+            "subtitle": "O curso ideal para você está aqui",
+            "title": "Nossos Cursos"
+        },
+        {
+            "_createdAt": "2025-10-10T00:46:58Z",
+            "_id": "a6ee90d8-5917-4870-89c7-b13d4f7a60a8",
+            "_rev": "OtSwRNXAIYzjp5mWDSKlwr",
+            "_system": {
+                "base": {
+                    "id": "a6ee90d8-5917-4870-89c7-b13d4f7a60a8",
+                    "rev": "OQ5DB7mgKWPtavdPuUBpMd"
+                }
+            },
+            "_type": "aboutSection",
+            "_updatedAt": "2025-10-14T23:51:41Z",
+            "features": [
+                {
+                    "_key": "f2aba4de2e2c",
+                    "_type": "featureItem",
+                    "description": "Fundada em 2004, a Rockfeller oferece um método moderno, rápido e eficiente, com foco na qualidade de ensino.",
+                    "icon": {
+                        "_type": "image",
+                        "asset": {
+                            "_ref": "image-36803debe48f224c73e07cbb858040e9805e3616-146x150-png",
+                            "_type": "reference"
+                        }
+                    }
+                },
+                {
+                    "_key": "b0a95792b081",
+                    "_type": "featureItem",
+                    "description": "Ser fluente em inglês é ter a liberdade de se expressar sem inseguranças e se conectar de forma autêntica. ",
+                    "icon": {
+                        "_type": "image",
+                        "asset": {
+                            "_ref": "image-3b93b6968e02e53ac5431f83c7387b6dab897ade-149x150-png",
+                            "_type": "reference"
+                        }
+                    }
+                },
+                {
+                    "_key": "1c61854bbe84",
+                    "_type": "featureItem",
+                    "description": "Mais do que simplesmente falar inglês, nosso propósito é preparar você para conquistar oportunidades no mundo com confiança e alcançar a verdadeira fluência.",
+                    "icon": {
+                        "_type": "image",
+                        "asset": {
+                            "_ref": "image-e01fe9cb3f052843c1d4eaaccd0af9d539ba4280-144x150-png",
+                            "_type": "reference"
+                        }
+                    }
+                },
+                {
+                    "_key": "1d194b2e4e36",
+                    "_type": "featureItem",
+                    "description": " Na Rockfeller, oferecemos um ensino completo e adaptado à sua rotina e aos seus objetivos, com atendimento personalizado para cada necessidade.",
+                    "icon": {
+                        "_type": "image",
+                        "asset": {
+                            "_ref": "image-d0f060e6d30264fe731ac41a1487ddd14ee350f1-142x150-png",
+                            "_type": "reference"
+                        }
+                    }
+                }
+            ],
+            "subtitle": "Sobre Nós",
+            "title": "À Rockefeller"
+        },
+        {
+            "_createdAt": "2025-10-10T00:30:36Z",
+            "_id": "aefc92a4-ca37-4c1b-8199-64fbe6f8f35a",
+            "_rev": "TYzLq1jkpxBbhvXHi3nT0v",
+            "_system": {
+                "base": {
+                    "id": "aefc92a4-ca37-4c1b-8199-64fbe6f8f35a",
+                    "rev": "B6YuB78WQfXgiCeBjod72E"
+                }
+            },
+            "_type": "header",
+            "_updatedAt": "2025-10-10T00:45:40Z",
+            "actionButton": {
+                "_type": "button",
+                "link": "https://rockfeller.com.br/teste-de-ingles/",
+                "style": "primary",
+                "text": "Teste seu Inglês"
+            },
+            "logo": {
+                "_type": "image",
+                "asset": {
+                    "_ref": "image-e108b21f514ff9517a6d2d5f499f47dbf8165da8-794x122-png",
+                    "_type": "reference"
+                }
+            },
+            "mobileMenuText": "Menu",
+            "navItems": [
+                {
+                    "_key": "45e00ee489fb",
+                    "_type": "navItem",
+                    "anchor": "#SobreNos",
+                    "title": "Sobre Nós"
+                },
+                {
+                    "_key": "c46ce9a008fd",
+                    "_type": "navItem",
+                    "anchor": "#NossosCursos",
+                    "title": "Nossos Cursos"
+                },
+                {
+                    "_key": "ed025647a643",
+                    "_type": "navItem",
+                    "anchor": "#Matricule-se",
+                    "title": "Matricule-se"
+                }
+            ]
+        },
+        {
+            "_createdAt": "2025-10-14T22:37:10Z",
+            "_id": "bf093448-0956-48a2-9a18-79ca72689749",
+            "_rev": "OQ5DB7mgKWPtavdPuUGs9s",
+            "_type": "contactFormSection",
+            "_updatedAt": "2025-10-14T22:49:46Z",
+            "errorMessage": "Ocorreu um erro ao enviar a mensagem. Tente novamente.",
+            "formFields": [
+                {
+                    "_key": "a085624ccb9e",
+                    "_type": "formField",
+                    "label": "Nome",
+                    "required": false,
+                    "type": "text"
+                },
+                {
+                    "_key": "4f42ff359732",
+                    "_type": "formField",
+                    "label": "Email",
+                    "required": false,
+                    "type": "email"
+                },
+                {
+                    "_key": "3a3f021c10b0",
+                    "_type": "formField",
+                    "label": "Telefone",
+                    "required": false,
+                    "type": "tel"
+                },
+                {
+                    "_key": "0118488cd7db",
+                    "_type": "formField",
+                    "label": "Já cursou inglês?",
+                    "options": [
+                        "Sim",
+                        "Não"
+                    ],
+                    "required": false,
+                    "type": "select"
+                },
+                {
+                    "_key": "9399195f8132",
+                    "_type": "formField",
+                    "label": "De 0 a 5, qual seu nível de conhecimento?",
+                    "options": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5"
+                    ],
+                    "required": false,
+                    "type": "select"
+                },
+                {
+                    "_key": "766140e85d50",
+                    "_type": "formField",
+                    "label": "Qual curso você gostaria de cursar?",
+                    "options": [
+                        "Kids",
+                        "Teens",
+                        "Adults"
+                    ],
+                    "required": false,
+                    "type": "select"
+                }
+            ],
+            "submitButtonText": "Enviar",
+            "subtitle": "Este é o formulário de matrícula. Basta inserir seus dados e nossa equipe entrará em contato com você. Pode ficar tranquilo, suas informações estão seguras.",
+            "successMessage": "Mensagem enviada com sucesso! Entraremos em contato em breve.",
+            "title": "Matricule-se"
+        },
+        {
+            "_createdAt": "2025-10-14T22:55:19Z",
+            "_id": "fb1d5663-d518-4391-933f-e4f0e4cf5b19",
+            "_rev": "OQ5DB7mgKWPtavdPuUODhY",
+            "_type": "footer",
+            "_updatedAt": "2025-10-14T23:17:41Z",
+            "copyrightText": "© 2024 Rockefeller. Todos os direitos reservados.",
+            "logo": {
+                "_type": "image",
+                "asset": {
+                    "_ref": "image-e108b21f514ff9517a6d2d5f499f47dbf8165da8-794x122-png",
+                    "_type": "reference"
+                }
+            },
+            "navColumns": [
+                {
+                    "_key": "590f024c008c",
+                    "_type": "footerNavColumn",
+                    "links": [
+                        {
+                            "_key": "5e002c5eec2d",
+                            "_type": "navItem",
+                            "anchor": "#",
+                            "title": "Nossos Cursos"
+                        },
+                        {
+                            "_key": "bd4e9cd701e2",
+                            "_type": "navItem",
+                            "anchor": "#",
+                            "title": "Matricule-se"
+                        },
+                        {
+                            "_key": "e725b366e2f0",
+                            "_type": "navItem",
+                            "title": "Teste seu Inglês",
+                            "url": "https://rockfeller.com.br/teste-de-ingles/"
+                        }
+                    ],
+                    "title": "Cursos"
+                },
+                {
+                    "_key": "406c8f816bda",
+                    "_type": "footerNavColumn",
+                    "links": [
+                        {
+                            "_key": "d3d8a2ca5c3b",
+                            "_type": "navItem",
+                            "anchor": "#",
+                            "title": "Sobre Nós"
+                        },
+                        {
+                            "_key": "c139b257fe01",
+                            "_type": "navItem",
+                            "title": "LGPD",
+                            "url": "https://rockfeller.com.br/lgpd/"
+                        }
+                    ],
+                    "title": "À Rockfeller"
+                },
+                {
+                    "_key": "b3226cc47b5b",
+                    "_type": "footerNavColumn",
+                    "links": [
+                        {
+                            "_key": "a1c94ef445a1",
+                            "_type": "navItem",
+                            "title": "R. Dom Pedro II, 1581 - Centro, Toledo - PR, 85901-270"
+                        },
+                        {
+                            "_key": "f3003447a8f9",
+                            "_type": "navItem",
+                            "title": "rockfellernumsei123@gmail.com"
+                        },
+                        {
+                            "_key": "b87269a23c7a",
+                            "_type": "navItem",
+                            "title": "(45) 3054-2312"
+                        },
+                        {
+                            "_key": "7321c503eae6",
+                            "_type": "navItem",
+                            "title": "(45) 9 9900-4060"
+                        }
+                    ],
+                    "title": "Fale Conosco"
+                }
+            ],
+            "socialMediaLinks": [
+                {
+                    "_key": "70e169a506dd",
+                    "_type": "socialLink",
+                    "icon": {
+                        "_type": "image",
+                        "asset": {
+                            "_ref": "image-4db6e14f1e0cc33e5e370d51d64636a61cb41ac8-51x100-svg",
+                            "_type": "reference"
+                        }
+                    },
+                    "platform": "instagram",
+                    "url": "https://www.instagram.com/rockfeller_toledo/"
+                },
+                {
+                    "_key": "5bdae40a3294",
+                    "_type": "socialLink",
+                    "icon": {
+                        "_type": "image",
+                        "asset": {
+                            "_ref": "image-6f5776b4cc37588333a0aa931062e5101cdeff50-51x100-svg",
+                            "_type": "reference"
+                        }
+                    },
+                    "platform": "youtube",
+                    "url": "https://www.youtube.com/user/RockfellerBrasil"
+                },
+                {
+                    "_key": "5d24c4efea64",
+                    "_type": "socialLink",
+                    "icon": {
+                        "_type": "image",
+                        "asset": {
+                            "_ref": "image-7e8a0ba4ad099bc76bffc8a5534c608a40211494-50x100-svg",
+                            "_type": "reference"
+                        }
+                    },
+                    "platform": "tiktok",
+                    "url": "https://www.tiktok.com/@rockfellerbrasil"
+                },
+                {
+                    "_key": "8a59ecca0289",
+                    "_type": "socialLink",
+                    "icon": {
+                        "_type": "image",
+                        "asset": {
+                            "_ref": "image-1e8497af7e55d9c32aeb815a03e64aa009c16895-51x100-svg",
+                            "_type": "reference"
+                        }
+                    },
+                    "platform": "linkedin",
+                    "url": "https://br.linkedin.com/company/rockfeller-toledo"
+                }
+            ]
+        },
+        {
+            "_createdAt": "2025-10-14T22:34:26Z",
+            "_id": "image-0dacfb9cd61db7ba2488dd3e50adc48bd34009c7-541x636-png",
+            "_rev": "fQh03pUyiAChIhIJQILpQi",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-14T22:34:26Z",
+            "assetId": "0dacfb9cd61db7ba2488dd3e50adc48bd34009c7",
+            "extension": "png",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "e6BC+D~7004s5R2{5YrD$t$^00NH={${-r{v}?o}9%I^019%?a%D-4",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 0.85062893081761,
+                    "height": 636,
+                    "width": 541
+                },
+                "hasAlpha": true,
+                "isOpaque": false,
+                "lqip": "data:image/png;base64,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",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#373668",
+                        "foreground": "#fff",
+                        "population": 1.11,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#1464a1",
+                        "foreground": "#fff",
+                        "population": 5.46,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#1464a1",
+                        "foreground": "#fff",
+                        "population": 5.46,
+                        "title": "#fff"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#bd9db7",
+                        "foreground": "#000",
+                        "population": 0.14,
+                        "title": "#fff"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#e79469",
+                        "foreground": "#000",
+                        "population": 0.15,
+                        "title": "#fff"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#618fb1",
+                        "foreground": "#fff",
+                        "population": 0.42,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#e2b60d",
+                        "foreground": "#000",
+                        "population": 3.84,
+                        "title": "#fff"
+                    }
+                }
+            },
+            "mimeType": "image/png",
+            "originalFilename": "livros teens.png",
+            "path": "images/gx7uk6s7/production/0dacfb9cd61db7ba2488dd3e50adc48bd34009c7-541x636.png",
+            "sha1hash": "0dacfb9cd61db7ba2488dd3e50adc48bd34009c7",
+            "size": 371438,
+            "uploadId": "BnvCl5MsEZVUeABGSfVc8bl4hWK15FiD",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/0dacfb9cd61db7ba2488dd3e50adc48bd34009c7-541x636.png"
+        },
+        {
+            "_createdAt": "2025-10-14T22:35:59Z",
+            "_id": "image-1344768f6f92d0a8845d07d5a40a43bf5fb69c67-768x764-png",
+            "_rev": "OQ5DB7mgKWPtavdPuUDxOO",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-14T22:35:59Z",
+            "assetId": "1344768f6f92d0a8845d07d5a40a43bf5fb69c67",
+            "extension": "png",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "e26kL?4:00o{-.I?%1e-E3oc00^kx_Vs?b~AE3R.s%NGIDI:~VM|0K",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 1.0052356020942408,
+                    "height": 764,
+                    "width": 768
+                },
+                "hasAlpha": true,
+                "isOpaque": false,
+                "lqip": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADiUlEQVR4nK2TW2gcdRTGZ2J1q1XSWkWtgohbiT60xKQ2O9md2bn/576z0//OZXduu5tpu+may1KTlNZNQ4INrdBU0WLaigGhqPiixVIv6EtREC1YQV/EvmihgkIrSl9GBiKY0rRp8Xs+/Pi+c76DIMuIIIhVEDKdAIAHWZZdgyDtDuR2FccI6jjZdaaZpyHkBnRdUiWpuJEg/NW3w0Pb7XaHonDpYpGbsk3hS9sUz0BDHbRUdcOiU/SWgARBrGLZ/FZF096tVKzL1dC4EHjylF2UNoI0SCEQ3rFiaBwjKITEvbzIFw3onG00dlwdHvK+r1a1Pf2yrWym/XwP53f1MLBzJXtFk7i2LT+g6nqoqOZXtmX9Xq9pnxuOvr+bC97czIannuWD6V4QbOnrg3cjSHxjpwkQcvB+WTa4HKHO4jhzUtPIl1l12wwmBOeyav0KpoWfZoxQZiutNcn8DeMDAFKA9J5kcpaEYUUzkxFkSpCFftGdVe3mBStq/cmXo1O4ZKlCVniK6pMe3bQpqRXScd24NO2upwjbymftt2m8vMAzQZ2UqxwuhEeVUuNSaWD0oujtPA5oraFt5SdVTNxt0FrekZx11wXmnoNPkIQ1zTPBzzKo/qKA8CgnVwsEX96Xpc3PcNE5TWjupJRXDxq48q3P6ucHVePQkGk+vRh/KTDTq3ZzrLdQsYf/CN3RXw2ldpjNl/oxHGa29El6LyabJCk7KqUvbIfhby/Woksv1ezXZ8rqM9cAY9Qn/NVkzuAE3vvEc4b/3h6M/lDW63s4SitQrG7RNAQAGN0SLuklUDqzb3Dkr7emJn46uXdg4o06eCz+LzCOY1SW5Xs4yiFp2joh8OVvoOK/byqVXQJfOCgJxhewaL0TVio1KEK3AJwPh/wdF18ba559rx05H4/BziXARMmHUJT1EI4buUxGdhmyYItsoSJL8IPACy6/MDLwY3vMH/dKJZJh7J1QdV6ZqPmT8y2/53wb3hUvUx80nQYpgtDWkqT4OMsqftkJv57eP3712Kutc/OHXX840h/BMGsDxxW7GpVaenZ39b7lYEsOJIrwYVHc1nSc+neTe0euHJvbdfrEEYuamwOpxQN0ICtVstNCwV0vimZRUdz5ehh8NDXuzhw5ZHfd9DuQZRRF0Z2JSxq43Ybh063n6z0HDkSdtwy61mniCDSbqWZz7t+o/4diNIHfbOwfPRdIw9N4ddgAAAAASUVORK5CYII=",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#2f4e5e",
+                        "foreground": "#fff",
+                        "population": 0.87,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#0d3350",
+                        "foreground": "#fff",
+                        "population": 0.1,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#978655",
+                        "foreground": "#fff",
+                        "population": 1.1,
+                        "title": "#fff"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#a4acd4",
+                        "foreground": "#000",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#d8928f",
+                        "foreground": "#000",
+                        "population": 0.01,
+                        "title": "#fff"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#978655",
+                        "foreground": "#fff",
+                        "population": 1.1,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#bcc628",
+                        "foreground": "#000",
+                        "population": 0.01,
+                        "title": "#fff"
+                    }
+                }
+            },
+            "mimeType": "image/png",
+            "originalFilename": "livros adults.png",
+            "path": "images/gx7uk6s7/production/1344768f6f92d0a8845d07d5a40a43bf5fb69c67-768x764.png",
+            "sha1hash": "1344768f6f92d0a8845d07d5a40a43bf5fb69c67",
+            "size": 329976,
+            "uploadId": "h4TMrLFTWtvM4vjXyWHaofUOfSQzY3OE",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/1344768f6f92d0a8845d07d5a40a43bf5fb69c67-768x764.png"
+        },
+        {
+            "_createdAt": "2025-10-15T01:01:22Z",
+            "_id": "image-1a6773a7dad6a4238e58222cb6fbe83405e213cb-728x634-png",
+            "_rev": "OQ5DB7mgKWPtavdPuV0bVi",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-15T01:01:22Z",
+            "assetId": "1a6773a7dad6a4238e58222cb6fbe83405e213cb",
+            "extension": "png",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "e6SF;L?bRi9F?bog9Ft7j]IU_3%M~qD%WB_3xuxus:IUIU%MM{Rjae",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 1.1482649842271293,
+                    "height": 634,
+                    "width": 728
+                },
+                "hasAlpha": false,
+                "isOpaque": true,
+                "lqip": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACK0lEQVR4nI2T67KcIBCEff9HPCorioqi3GXk5kkpm62kklSl/3/00NNTfT+6/lCMkXOOcdd1HaV033etdQjh+xdVOScAOJw7zzP8VM455SSUwj1umgYhRAgRQsQYf4PhhGVZxnHctk0pZYw5jiPGGHNSxvSEtG2LUPt3+HCOjGN5fhiGnXPnHjilw7md83VdGWOcc631eZ4ppeu6Ps7nsq7o9Wrqum1buizW2hCC997aQymlbxmttZL3XB/+uq4KABhj4zTNM6UzZYwZY2KM3nut9b7tSirnHAAYY5SU1to7HX+/XiklyTBgjJdl5TsXQgDAHVi6g9RaO+fuX8QohSADmaZp33YppJSyUlL0uGuaGmM8zzPnwnufcw4hHMdhjHnDIfB9b9v266vuXt08zdu+V1qJ4d5HjRAax1FKGUIotkKIbdvKem9nKbsO13XzQq95plyIyqhtHF6obTDuGWPW2ntNOccYi3NJKMYgFe97jBDq+4ExJqWqDiNWOpKhp3SRUgLAM2M4z9M9zUkpPW95JdjYd7jrpmkSUhpjq+BPa0ypBwB478tvORec81KYK+cUg1V8mQghw7KuxloAqK7rKtkWhyLvvXlUOuseWWME56WIABBCqN6H8f0uzedOynpSSs45ejeAcs5LZwCgOL3hP1Umyjnb4yDjiBDCfb8+iYYQSkP/CX/u9ACYF9oiVNc1IURp7f1/wIV3ADOlqEVN3QyEcC7O8yzwD5JgyOxFnMrkAAAAAElFTkSuQmCC",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#7a685f",
+                        "foreground": "#fff",
+                        "population": 0.03,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#5a5129",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#cec395",
+                        "foreground": "#000",
+                        "population": 0.12,
+                        "title": "#fff"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#bcd4ce",
+                        "foreground": "#000",
+                        "population": 0.01,
+                        "title": "#000"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#e5ddba",
+                        "foreground": "#000",
+                        "population": 0.09,
+                        "title": "#000"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#6c948c",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#cec395",
+                        "foreground": "#000",
+                        "population": 0.12,
+                        "title": "#fff"
+                    }
+                }
+            },
+            "mimeType": "image/png",
+            "originalFilename": "modelo.png",
+            "path": "images/gx7uk6s7/production/1a6773a7dad6a4238e58222cb6fbe83405e213cb-728x634.png",
+            "sha1hash": "1a6773a7dad6a4238e58222cb6fbe83405e213cb",
+            "size": 53316,
+            "uploadId": "tNjhAvbh1whWpfJeOzAU0zBD2GSSYbu1",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/1a6773a7dad6a4238e58222cb6fbe83405e213cb-728x634.png"
+        },
+        {
+            "_createdAt": "2025-10-14T22:32:04Z",
+            "_id": "image-1b4d3ad85e1722330d8c70e89413a232518a3e0c-711x695-png",
+            "_rev": "OQ5DB7mgKWPtavdPuUDDmx",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-14T22:32:04Z",
+            "assetId": "1b4d3ad85e1722330d8c70e89413a232518a3e0c",
+            "extension": "png",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "e9BD+tIU00n2^acI%1ZxD+T200-;?uIpyF-LIqOd-4w=A0M__2xb4n",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 1.023021582733813,
+                    "height": 695,
+                    "width": 711
+                },
+                "hasAlpha": true,
+                "isOpaque": false,
+                "lqip": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADzUlEQVR4nKVUfUwTZxy+FheJEJcs02EmccYli/xF4rIlDmNIGOqYYYt2zq+prB3GrZkOK0HnDgi4CcpWDMqpSVdAoGdK8VqutNBe8a5fx7W9Xu8o/YC2UNptbskWZ7bpknc5sj9GnKxxT/L7633z5Hne9/c8ELQMAACSv0cKw0AK/R/0sGwBQoU23bCGNl8bj7zYw2YLYPCUpDAMpFqHb3MfSTf0Ed6ufoI+iboCr6E8XygqhsTJFQAAiYZI5GN+YZctELLavb7vxrwMZfJxtaiXL0JRNG9RaY6kEhiGpQgx/bydT9UKsWRoOhx55IvMTBv42fNfEWzZ1zb6lXYnu1aJ4yvF+1AuCg2hWLE3ljmXmMvEk6n53+nk98Grk3EEHrnbfWWE7GgbcXwgv+PZCMFgxX8qlaEgTx+cX0/H08dS6Sw6n/3BRabuGZvGg/rW29ZI15Al3YQRuv1D9PYNmkS+aH/xXZ9k+cNR/rlae+iNBlfsPS2XqKGiqeP9gfiZOoN7+EKv8aeLOssDBTZprjawe1qH/SU3bcIGtSe6WhTymFWYIFaohq2vKkesaoXZjh2a4L6R343vb3EIsrZRL4ZgtvttJue9Q0ZBr9BPNnaZPZd67fQXiGmiqq7HshaC/qFUJDyBEoXNKLr3gg5xN6Pdv6pGjZyc5Oo7PFOVuI9rJVjBYRaS9i/JKHJe79Rpx1zRQTsVvYKNXz2tsZRCMjRvye+eMPFF9Tr8VPPN7khbV8uf7X0d0434QL3R07Ftjr+8Mxq2HxRmojWdYwHV2UHKdt3kvH/dTP18Tk/2HtFQpUvSJCqUW6Y3HjWyLUdvU7MfaYb+qNN+y3SaOlUzwQOnHsTKG3+LVSjm2I93tA9bj38+xNCXTb6HrRiTqbnFXKq84Xt5aZIAkBzUM+v2jvDHduPxwbdNYfc+k78PmbjWIHC1WDxcM5OO7HOkgnvOYsQteT8VHhik41NdE1HXST2nfEvjLXosmjvV+MrqAbq42hDaWnWHkylw5/ujTlW9i1KwVrLuoYv5dFYIHGgSmKbXaUGocPGxTyxs7DMtyZfBKFH471kHQIIgyDNKtXo1jitLwuTuRtr67uy4+cgjxn04lJyqUmT8ZWsWGGwVx42/EAwG1zMM86wYyWXTAgAsTdPVxUln+ekEVeGcpXbNZ3zbrL9MbalaYNatEs8Xaw0sv9hLwBOywjhZvmWBqlRk3BUXs56tZ370l5YAFMoDECR5iuaBJIRme74fl62J2t7ZlCB2vJS1vFmQM8GTSMUdBeKAHNolR0hEi7nU1V9DukuoLblHRgAAAABJRU5ErkJggg==",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#275459",
+                        "foreground": "#fff",
+                        "population": 0.32,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#5f5016",
+                        "foreground": "#fff",
+                        "population": 0.14,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#f1d326",
+                        "foreground": "#000",
+                        "population": 2.2,
+                        "title": "#000"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#d3bdd0",
+                        "foreground": "#000",
+                        "population": 0.15,
+                        "title": "#fff"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#ecb671",
+                        "foreground": "#000",
+                        "population": 0.43,
+                        "title": "#fff"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#5997a4",
+                        "foreground": "#fff",
+                        "population": 0.59,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#f1d326",
+                        "foreground": "#000",
+                        "population": 2.2,
+                        "title": "#000"
+                    }
+                }
+            },
+            "mimeType": "image/png",
+            "originalFilename": "livros kids.png",
+            "path": "images/gx7uk6s7/production/1b4d3ad85e1722330d8c70e89413a232518a3e0c-711x695.png",
+            "sha1hash": "1b4d3ad85e1722330d8c70e89413a232518a3e0c",
+            "size": 361727,
+            "uploadId": "Zl3WVbguzWsvP1jl9XwhcZaCA4aVhsdO",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/1b4d3ad85e1722330d8c70e89413a232518a3e0c-711x695.png"
+        },
+        {
+            "_createdAt": "2025-10-14T23:17:18Z",
+            "_id": "image-1e8497af7e55d9c32aeb815a03e64aa009c16895-51x100-svg",
+            "_rev": "OQ5DB7mgKWPtavdPuUOAti",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-14T23:17:18Z",
+            "assetId": "1e8497af7e55d9c32aeb815a03e64aa009c16895",
+            "extension": "svg",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "cAHV9wxu00%MfQRj00Rj_39Fj[xu~qj[xu",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 0.51,
+                    "height": 100,
+                    "width": 51
+                },
+                "hasAlpha": true,
+                "isOpaque": false,
+                "lqip": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAnCAYAAAAPZ2gOAAAACXBIWXMAAAsTAAALEwEAmpwYAAABz0lEQVR4nO3US4iNYRzH8dOwkA2Tkg02GimKlCSxkiKXshAlFi5ZW8gwuU1ZWGiMULIQWSkrFhYuC6VIsXBcy10uGZTGrf9HT/5HGZpzjmZ5fvX0Ps/7vM/3fd/f/1KptNRSSw0KwzAKE9CByQ2ODkzEaAyvwdowFouwAz04hN4GxkHsxFKMK6wCHIE5OIJqRLzGm0ZGPnsfxyNiPkZW8ldX4AI+4TPe4gO+q69+XMEqtBdge1lExKUE3YiIkxFxHi8j4kcd4JeIuIp1GPMHMCJe4Cy24ADu4Nt/A/36wmvFkwQ/rHkVEX34iHc5/4qoB3yFixnpEzk/UwJWbMBpHI2IU7iZnvcPBnyUqbAY67EfGyNiNuZhYWbE3IjYiusleIMB72EPpmMJOrEM4zELazPnJhUojkXE02aA2wogIqZgM86lvwswFbvKmaaBud6Nu+nrygR2ZjE0DZyBvbl/GasxLfer9YDdmInlEbG9XHPdnWVWqmJNeWnuVwcDPsmU2ISu9KsrI13S5nlE3MK+iNiQNfx4IPB3LUfE+3IIt4tfJYJ5LZBnWbcluR+UexnhvoG1XOs2h4eq27T9ox/2Njh6/uqHQ96xW2qppUp9/QTX4i1fYhJjqgAAAABJRU5ErkJggg==",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#3c3c3c",
+                        "foreground": "#fff",
+                        "population": 0.08,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#424242",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#bcbcbc",
+                        "foreground": "#000",
+                        "population": 0.14,
+                        "title": "#fff"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#bcbcbc",
+                        "foreground": "#000",
+                        "population": 0.14,
+                        "title": "#fff"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#bcbcbc",
+                        "foreground": "#000",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#7c7c7c",
+                        "foreground": "#fff",
+                        "population": 0.12,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#7f7f7f",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    }
+                }
+            },
+            "mimeType": "image/svg+xml",
+            "originalFilename": "LinkedIn.svg",
+            "path": "images/gx7uk6s7/production/1e8497af7e55d9c32aeb815a03e64aa009c16895-51x100.svg",
+            "sha1hash": "1e8497af7e55d9c32aeb815a03e64aa009c16895",
+            "size": 2009,
+            "uploadId": "7ChdSB4rSscNCSejjPqriwl85lX1ANnU",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/1e8497af7e55d9c32aeb815a03e64aa009c16895-51x100.svg"
+        },
+        {
+            "_createdAt": "2025-10-10T00:52:37Z",
+            "_id": "image-36803debe48f224c73e07cbb858040e9805e3616-146x150-png",
+            "_rev": "czv5QnE4jWWmyJTFsgHxXd",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-10T00:52:37Z",
+            "assetId": "36803debe48f224c73e07cbb858040e9805e3616",
+            "extension": "png",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "eWLz{qkC_Nt7-lfla#oeoJWX_NofMcj[9bxZoJR-R-oJ-kj[9bay%K",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 0.9733333333333334,
+                    "height": 150,
+                    "width": 146
+                },
+                "hasAlpha": true,
+                "isOpaque": false,
+                "lqip": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD5ElEQVR4nK2VbUybVRTHO9iUOC0mSrJl++ZiMmNAiFkgTigvbREYmBCS2oxKxsTpwMkg46UPsDkwwGjRzE0yVsiMmmbVbAisi2NLNoewFQsUaO+9z0sfNcZ9MlGHJgr9m+dpxbYw/eKHf3JzcvO7955zz/9oBEF4QZKk04yxHyilq5TSEKUU0SIRxceVvYSQVcbYt5Ik2URR3KMRRfE9WZa9PM//RghZB2NMEQtLjZHYwwgJCYKwLMvyXVmWuzSCIFBBEH5ljMXCmLoZC0t+eH1LqhaX/GpsA+CqJEk/BYPBaQ1j7BfG2J/RTw0QgjuzPly6NoUPnNfQdX5M1VnnBEYmpuCZ9cWAGWMhURTvC4Igaiil96OBi/4AvvxqBp2DoyhtPI9Uix27KnpVpb3aj5ebHOgeGsf12zPw+wOghKhA5dk8zwcV4DKldEUB+gMEV296UG9zIW2/DVr9cSTqOCTkhJWoa4NWfwLplf049v7nmFCgAaLkVgUyxuQ1oBL82jOH9g9H8Ky5D0m5bSpkk47Dpgjw4VwrkvNb8ITeigyLTX3F9Ixv7YZrQEbpij9AQp+O3oKhbgBb8ztUiAJL0HF4NL8Vu8oaoD9wCBWHq5FlPowdRRxK6gfhck+CEBoS/wYSSpd5nq145xdDnedG8XRFDxKyrSpws45DSmET8qveQGvbK7g4UIRLDiMONliwzdiE3aY+9A5fwfyCPySJ4jKlUcDJu3Ohuh4nthefVIFaQwtSK47gQH0VLpwuwbjDgBsfFeDKsAGmumpo81qwc18XGu0u3PH6QpIUB7w57Q0dPPkxUl56B0m5LcjaXwt7dzk8Th2+H8/CnCsb7mED+rrLkWE6gi3ZVvXw2m4nJj3zYSCLu2FtjxPbijuRnN+Mstdfw2cDRfjRnYnfbzyPe1cz8YXDCFNtNZ40NiPxRQ47SzsffMN/ctiLrXmtSDe9hQarGe4hA+65MyGM7EX7cZNanC06DptzODxjOoXeofHYHMZUeSxc5cf17Xiq7ChKD9WgkTPj8mAhPjlTgoKqN/FInhUJ2Rwe03eguP4cLrpvx1Y5/h92nB1BqvkUdhQ1Y3f529hjroO5rhr7amqwvegYEnM4JOW14blKe+Qfzq//h/GdctTmQkalDSmFHUguaEWKsQnJBc14KJeD1nAC6ZZ+NEU6JbBBp6zv5Vse9fSyRgfSLP1xvTwU6eVvNu5lnud/5nn+j3Vu4/XhcpTbvOsYwxnFba4rbrOg5G2d24iiKDzYD8Net+aHs74ldf1vfijL8pQmGAz+v45NCNkrCII6U5T5sBH0v2YKpfQ7SZLsykz5C38v4wdGr3zJAAAAAElFTkSuQmCC",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#213e4d",
+                        "foreground": "#fff",
+                        "population": 0.68,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#053d7a",
+                        "foreground": "#fff",
+                        "population": 26.35,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#053d7a",
+                        "foreground": "#fff",
+                        "population": 26.35,
+                        "title": "#fff"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#acc2d3",
+                        "foreground": "#000",
+                        "population": 0.31,
+                        "title": "#fff"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#c8dff7",
+                        "foreground": "#000",
+                        "population": 0.75,
+                        "title": "#000"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#5d8c8a",
+                        "foreground": "#fff",
+                        "population": 0.03,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#f5c036",
+                        "foreground": "#000",
+                        "population": 5.47,
+                        "title": "#fff"
+                    }
+                }
+            },
+            "mimeType": "image/png",
+            "originalFilename": "rocket.png",
+            "path": "images/gx7uk6s7/production/36803debe48f224c73e07cbb858040e9805e3616-146x150.png",
+            "sha1hash": "36803debe48f224c73e07cbb858040e9805e3616",
+            "size": 5502,
+            "uploadId": "jy0fZR7HBaDZC9hP1ckoXsQ2hgWa6K0P",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/36803debe48f224c73e07cbb858040e9805e3616-146x150.png"
+        },
+        {
+            "_createdAt": "2025-10-14T22:25:40Z",
+            "_id": "image-3b93b6968e02e53ac5431f83c7387b6dab897ade-149x150-png",
+            "_rev": "OQ5DB7mgKWPtavdPuUBa1d",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-14T22:25:40Z",
+            "assetId": "3b93b6968e02e53ac5431f83c7387b6dab897ade",
+            "extension": "png",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "eXLEQhof~qt7xsoffQj[fQj@~qj[D%a|E2t7fQj@fQayxsfQE2ayxt",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 0.9933333333333333,
+                    "height": 150,
+                    "width": 149
+                },
+                "hasAlpha": true,
+                "isOpaque": false,
+                "lqip": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADLklEQVR4nK2VS0xTQRSGuzbBGAjyMIREiSaykCiiCRojpUCxUBESlYqV3ra3PAoSUhBlQaHsjHSBOxcgr8RIlMSYIi5aEyKRRygUcuf2TsrahI0rHqG/manYhxAlcXFy55478805c/45V0UpFRRF8QSDwR+EECSalDCOfSeEhNmTrWUMSqlJFQqFPmxsbGwEg8Gd/Qn7JjOT4+2ATcOKouwwRigUmlJRSjcppVuJMEmSsLy6htn5ZXyeXcDn2UU+Zj72LRFKKd2ilH5XybLMItuLneBfXcNH7ze4R6fR+vwN6npec2Nj5mPf/KvridA9WZa3VYSQXUmSfke36A9g6L0XRucILtQNIEPXj+RSJ1JKnThV4UJe3Qs8co5i+L2XzyXRjBhjJw7oD6xheMqLKscrZOhcOHazG0lFXUjWPEG6tgMpmk7uy9S5+JzhKR9fcyCQnYvHNw9T7xgyK1w4ru7CaX078mtbcMPYhDKzDYUPmpGjb0eKpgtZlS4IvWPw+L5Fqr8PlAjZJUQKr6yuY3BiBheNbiSpnyG35jF0VhEVohV3Gs2oaojYbZsFuTVtSFJ345LRjcGJT1gJ8PP8BZTIrkxIeG7BD4d7Eln6fqRrHdBaRFSKVlw1NKPYJKLEzMACDK31uFxrR5KaRdkPh/st5hb9TFLRCBnQ+3UJ5r5xZJQ7kaNvwy2riCsGO85Vt6FYEFHVKOCu3YT7rfXQCDakaR04qe2F2TUG39wS02w80PcLmFnuxNmqx9DZrLhmbELePTuPjgNbTKhtrUeJOQq0/AGMTXlgEtn6fmRXtEPfYEGZVUR+rR1qIZoyAxawlIsiKXe4JyMpx0bIixJYx8vxGX7QqaVdKDAwUAOuGxuhEy3Q84KYobdZcL46UhRWwMGJmfiixMpm2jcPoW+MSyK1tJNXusDQjMKHTSgRIrI5U8lk84TPYRLzfJmPl81hwmZaPFH8FMmaTm5pZQ7+/Gdhk/2rtxzA0DsvjD2juFD3ApkxV49twnyPnCN848Ou3k4sML45eA5vDoFDmoOiKJuKomz/t/Z11AbLfH9rsEf6BSTC+MayzH8BsiybfgLuH5q+cPX8MAAAAABJRU5ErkJggg==",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#475765",
+                        "foreground": "#fff",
+                        "population": 0.59,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#063e79",
+                        "foreground": "#fff",
+                        "population": 25.32,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#063e79",
+                        "foreground": "#fff",
+                        "population": 25.32,
+                        "title": "#fff"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#adc1d0",
+                        "foreground": "#000",
+                        "population": 0.37,
+                        "title": "#fff"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#cadff6",
+                        "foreground": "#000",
+                        "population": 0.59,
+                        "title": "#000"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#64a4a4",
+                        "foreground": "#fff",
+                        "population": 0.01,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#e6be3d",
+                        "foreground": "#000",
+                        "population": 2.73,
+                        "title": "#fff"
+                    }
+                }
+            },
+            "mimeType": "image/png",
+            "originalFilename": "brain.png",
+            "path": "images/gx7uk6s7/production/3b93b6968e02e53ac5431f83c7387b6dab897ade-149x150.png",
+            "sha1hash": "3b93b6968e02e53ac5431f83c7387b6dab897ade",
+            "size": 8060,
+            "uploadId": "W18KB7xMDHUroJhxUipYqiZb4kMlWvfj",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/3b93b6968e02e53ac5431f83c7387b6dab897ade-149x150.png"
+        },
+        {
+            "_createdAt": "2025-10-14T23:11:37Z",
+            "_id": "image-4db6e14f1e0cc33e5e370d51d64636a61cb41ac8-51x100-svg",
+            "_rev": "OQ5DB7mgKWPtavdPuUMJbs",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-14T23:11:37Z",
+            "assetId": "4db6e14f1e0cc33e5e370d51d64636a61cb41ac8",
+            "extension": "svg",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "cOG[[{t700offQay00WB?bRjayj[~qj[WB",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 0.51,
+                    "height": 100,
+                    "width": 51
+                },
+                "hasAlpha": true,
+                "isOpaque": false,
+                "lqip": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAnCAYAAAAPZ2gOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAByklEQVR4nO3Uy29NURQG8Hs7IKQJY8Y0Kf4Aj4HifzCriVFNPAeCmVdi5NGYaPgbmNUcQTwq8YhnDAQRd4LeCusnO9aN4/T2tmmn90u+5Jx91v72OmuvbzUaffTRxyKAZkQsxyBWzcHBjGn2EhpIkXXYhd0YxZ4aR/NbiVmfewZmZYXVGMEZTEbEQ0zhSY1T+e0mzmJH7v2XLVZgCy7hJdrmxm98w8c88CK2YWVVcE1EHMAjzNQ2T0fE18LynO9vI+IunuMeDmFtVbDU4kKeGinWjoh3+WvXkpN4kbyP1xHxHuMYqgoO40pmIbN8hsvYh73JsfzFIvYZ3/EFV7GxKrgBExXBDxlUxE7iRvJ0rk1kTEREK7Pf1FUwIn5FxGOcwFHciogfhbgTEcdwvNQ7Y1s9BfETt3Ek2+JV1rXwDc7hcDmolCYWk2Gp1VIy7FbD61nDU3kx89ZwuMctj9VuubTI006/xl/BWbdc+vD8QvqwNHXFSRERn9JhQ3Wn7E+PdnNKKzOZzrUOZrLeB+tOKV7enE07n5c7aGcHjGNr3cvNnHPbs3mLxR4scNqMzJo2FdHOPNy5pHnYRXjZfBM7Y5r/be6jjz4aC8Mf1x+QBnCvDX4AAAAASUVORK5CYII=",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#444444",
+                        "foreground": "#fff",
+                        "population": 0.31,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#424242",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#444444",
+                        "foreground": "#fff",
+                        "population": 0.31,
+                        "title": "#fff"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#bcbcbc",
+                        "foreground": "#000",
+                        "population": 0.12,
+                        "title": "#fff"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#bcbcbc",
+                        "foreground": "#000",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#7c7c7c",
+                        "foreground": "#fff",
+                        "population": 0.1,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#7f7f7f",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    }
+                }
+            },
+            "mimeType": "image/svg+xml",
+            "originalFilename": "Instagram.svg",
+            "path": "images/gx7uk6s7/production/4db6e14f1e0cc33e5e370d51d64636a61cb41ac8-51x100.svg",
+            "sha1hash": "4db6e14f1e0cc33e5e370d51d64636a61cb41ac8",
+            "size": 2501,
+            "uploadId": "lxyIwwkR0jBafRTyx23FAhMk8UgilJbw",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/4db6e14f1e0cc33e5e370d51d64636a61cb41ac8-51x100.svg"
+        },
+        {
+            "_createdAt": "2025-10-14T23:13:22Z",
+            "_id": "image-6f5776b4cc37588333a0aa931062e5101cdeff50-51x100-svg",
+            "_rev": "OQ5DB7mgKWPtavdPuUMPiE",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-14T23:13:22Z",
+            "assetId": "6f5776b4cc37588333a0aa931062e5101cdeff50",
+            "extension": "svg",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "ccF={%t7IUofj[ay00WB%MWBayj[~qj[WB",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 0.51,
+                    "height": 100,
+                    "width": 51
+                },
+                "hasAlpha": true,
+                "isOpaque": false,
+                "lqip": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAnCAYAAAAPZ2gOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB10lEQVR4nO3UTYhOYRwF8BmZfIWIyML356woiVIyyk6ywVLKwk42rJRRSDSKfIwNC0nsKGsWSinZmsyU78zIZBDi/9Nj/u/rnddMk+30nrrd7r1P557nnP95mpoaaKCBMQWMj4hpmIsFWIoVEbEKrXlfiWVYhHmYERET0FxL1JxEa7AbB9GOMziPy7iCTlxAB45HxCHswUbMKYIqhJOwIRc+QldEvMBbvEdfRHwoF3rxDq/wPCKe4Bp2FLUVwsK+H4/x3VBEXiPhF7pxDEv+bD39KC+6I+JnlSnia1EaET3or/1Wh960ZC1aCuFynMWbOjXl+TpO4Bae4XO94oj4iJtow+SmTO9S+lVdnMra09/NEXEE99PLstUKPuEOtmFqUdiaCfbV/bknSRZjJrZk6l34UbN0APcymOkVhRdHUdiW5A+GUTiAu9hexq/iYUdEvB7Bw5M1Hn4ZJvV+3MZWTCmEC3E052pIyng5WsoxqPhqRKwvrSmEsyNiXw71t/+dwxgswalSU4wrhBOxDqfxsGxtuKZkaLVNKXP7FDewC7OqXS5xYzV2RsSBtKD84FyOVGd2utplHMbeiNiUB0XLP6dNEpcqzs8qjXbazMwd/j1tGmiggTGB3zPeDpheatutAAAAAElFTkSuQmCC",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#444444",
+                        "foreground": "#fff",
+                        "population": 0.06,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#424242",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#bcbcbc",
+                        "foreground": "#000",
+                        "population": 0.2,
+                        "title": "#fff"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#bcbcbc",
+                        "foreground": "#000",
+                        "population": 0.2,
+                        "title": "#fff"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#bcbcbc",
+                        "foreground": "#000",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#7c7c7c",
+                        "foreground": "#fff",
+                        "population": 0.08,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#7f7f7f",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    }
+                }
+            },
+            "mimeType": "image/svg+xml",
+            "originalFilename": "YouTube.svg",
+            "path": "images/gx7uk6s7/production/6f5776b4cc37588333a0aa931062e5101cdeff50-51x100.svg",
+            "sha1hash": "6f5776b4cc37588333a0aa931062e5101cdeff50",
+            "size": 2133,
+            "uploadId": "4NeL9uPK4uLiUZ9Hd0Ww6hYJuyW3Kg1z",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/6f5776b4cc37588333a0aa931062e5101cdeff50-51x100.svg"
+        },
+        {
+            "_createdAt": "2025-10-14T23:15:41Z",
+            "_id": "image-7e8a0ba4ad099bc76bffc8a5534c608a40211494-50x100-svg",
+            "_rev": "OQ5DB7mgKWPtavdPuUNIYJ",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-14T23:15:41Z",
+            "assetId": "7e8a0ba4ad099bc76bffc8a5534c608a40211494",
+            "extension": "svg",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "cGH_=B%M4nt7ofay00M{-;M{WBof~qofof",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 0.5,
+                    "height": 100,
+                    "width": 50
+                },
+                "hasAlpha": true,
+                "isOpaque": false,
+                "lqip": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAACXBIWXMAAAsTAAALEwEAmpwYAAABwElEQVR4nO3VzYtNARjH8Ts2hhXGSP4Ayn+AUqy8W1iKKPI6SY00dkiKnfFSStnY2ImsLCYLb1EYNJQhRQibQXONeT46eq5uurlnGsvzq6ezOE/f87yfWq1SpUolhQ50Yia6MaekdWNGREwtGA3YFMzGUmzBXvSUtD3YjMWY9RuK6ViGC3iIITwvaUN4gLNYgmm1DHtnAYuIn1rrR0R8xnuMYLzpXR13M7uuAjgPvfm1ZsdmfYqI65nFHXxtejcWEY+yVHMbwAP/AkbEaxzFGhzDs4ysGdhTGoiX6TM/m3cia/dtIsAonNNeRMRBLMQCLMfxiHhVFjiazrcL54i4hz6szOIX43KqLLCOQZyMiO3oz4b05cxdzHSHy6b8DqexNiI24hIGcAhbcTVHp6GxdsCnOQLrcD7TGkxgke61iQIfYwc24HJEvMVN7MY23IiI7xMBDuMwVkTE/iLKjG59Pp9k50sDR4oosC8HeRVWYxeu5ApqB+xtAo5HxBfcwjkcySYNRMSHv6JruXqtjkMx1KP4GBFvClDWrdUm1XO//xyHyZ6v+ziT56uzcWC7JnFgN2FRXvuO//8LqFSpUq29fgFPM4tgGSV6JAAAAABJRU5ErkJggg==",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#444444",
+                        "foreground": "#fff",
+                        "population": 0.32,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#424242",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#444444",
+                        "foreground": "#fff",
+                        "population": 0.32,
+                        "title": "#fff"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#bcbcbc",
+                        "foreground": "#000",
+                        "population": 0.2,
+                        "title": "#fff"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#bcbcbc",
+                        "foreground": "#000",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#7c7c7c",
+                        "foreground": "#fff",
+                        "population": 0.04,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#7f7f7f",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    }
+                }
+            },
+            "mimeType": "image/svg+xml",
+            "originalFilename": "TikTok.svg",
+            "path": "images/gx7uk6s7/production/7e8a0ba4ad099bc76bffc8a5534c608a40211494-50x100.svg",
+            "sha1hash": "7e8a0ba4ad099bc76bffc8a5534c608a40211494",
+            "size": 2254,
+            "uploadId": "BCyxC7EKknzYhAYcrPZA5hjeOv6uRhlk",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/7e8a0ba4ad099bc76bffc8a5534c608a40211494-50x100.svg"
+        },
+        {
+            "_createdAt": "2025-10-21T23:34:50Z",
+            "_id": "image-876184de3ac23d60e68ea0edd006fdcd67c8ba38-1920x1080-png",
+            "_rev": "QLLGa7UcAanA0zQKc1MwD3",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-21T23:34:50Z",
+            "assetId": "876184de3ac23d60e68ea0edd006fdcd67c8ba38",
+            "extension": "png",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "M2S$ov00j[?b%M-;9Ft79FD%~qxuD%xuRj",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 1.7777777777777777,
+                    "height": 1080,
+                    "width": 1920
+                },
+                "hasAlpha": false,
+                "isOpaque": true,
+                "lqip": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA80lEQVR4nHWR2ZKEIAxF/f/P1Cr1oUWICVkAZ0qxp116zhOkOCR10yCi9x4AVDXvpJTyN0opP1ca51zf9+M4hhBoBxHrgYjiCVVddz7y6/Xqum4YhnmeASCE4L0PO3CFiOp0F7lt2ypX5yn/nZdlqf0PGRGnaXLO+Z0QAiLymffYzCwiKaVPZ1UlomVZAKD6MUYzE5HIXEMgImY2s1tmjZmdexBR/b7Wq7qntRXLTRaRc6rMUU1LKeu6llK2zb33dM75kFNKqiosiAgAiKiq5fHuK01dXU6ZKG4yoZk9m9yoczXHpayquo0tfN7kf2bOWUR+AYvXgOvpZwoxAAAAAElFTkSuQmCC",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#525252",
+                        "foreground": "#fff",
+                        "population": 0.3,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#424242",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#c0c0c0",
+                        "foreground": "#000",
+                        "population": 1.1,
+                        "title": "#fff"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#c0c0c0",
+                        "foreground": "#000",
+                        "population": 1.1,
+                        "title": "#fff"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#bcbcbc",
+                        "foreground": "#000",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#848484",
+                        "foreground": "#fff",
+                        "population": 0.3,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#7f7f7f",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    }
+                }
+            },
+            "mimeType": "image/png",
+            "originalFilename": "2.png",
+            "path": "images/gx7uk6s7/production/876184de3ac23d60e68ea0edd006fdcd67c8ba38-1920x1080.png",
+            "sha1hash": "876184de3ac23d60e68ea0edd006fdcd67c8ba38",
+            "size": 160377,
+            "uploadId": "hhwORjRNTsx7KA3AlXvd7ZLjJJoyqjo1",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/876184de3ac23d60e68ea0edd006fdcd67c8ba38-1920x1080.png"
+        },
+        {
+            "_createdAt": "2025-10-14T22:35:38Z",
+            "_id": "image-89578fa48b428695282ef9982441f5301f3c6f71-670x845-png",
+            "_rev": "fQh03pUyiAChIhIJQIM57I",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-14T22:35:38Z",
+            "assetId": "89578fa48b428695282ef9982441f5301f3c6f71",
+            "extension": "png",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "dEH^j^^M02Nf0CNx~3RQ9aIt%L-O?DskV@oztOt3V[E5",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 0.7928994082840237,
+                    "height": 845,
+                    "width": 670
+                },
+                "hasAlpha": true,
+                "isOpaque": false,
+                "lqip": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAYAAAAxFw7TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFVklEQVR4nJWUa1ATZxSGNxpYNrubgCCgVCwlagNVQBRoMUQN4AViSpmUFgJYrFEQVO6XiHtWRhSpYjsCoraMRYGKEBXTmKaQYsQMo3gZyngr9RIxpplMDJTf24n2RxWc4pn5fnx/nvOe9z3fhyBvL5ZIJGLHxobzVkdG+qxYvNiDz+ejCILMQN61KAqZkZgYzomNDvJPiBAIU4Sh0nRxaKxcFMaXRUVhzmbvwmOlrY3gJkQHh8Qv4yenxny0vSptZcWRXGnhvq/XS/Nlq/1kMmTmtGEKRbiLPD6KHx/KTxUvmV+euzaUOlMmo3sOZkMXZGR/l5sUQmWK3BhmeipZhfI4PEm0NCpGMG+HUOBH5yeEgaoyBQyHcmhddVaBqjJNeK44i2QYZnrATKnIfV34h3GfLJpbLA72o8slIdCtTALjNwrasHdTWc+ejet11emezDR9ZMnjPvZeExoojRHMq0gKD6ArJcHQmR8H/fsz6Cv7Nyt/pTOStJTcezowhKKoGSnCZfPiF89PFQe9VykNC4DiNYugZXMkqMvW0WdLPlX+kCeRNmyN857OyCxKJnOVrQgNEgf5K1YJ/EAWuQDolEjoKBZD685VNHy+rHyrODhRIVroNZ3VYdVkbSBTYgTCtSG++bJIH5pKC4GOvelgaNwGqj0yWimLqEgXLpTKVvBn/2/KekrEPlka5L9P4Ser2uhecWInSRvqBXBHnQd3NHVgOF4IR3IllQUblqbtS/X/gPkdcXU+AGSqcnY7V+NJ9u6dHX31qHve8GkcTOcxsPZ4gs0oAZPxINzurIF2yKCqM8O3nyrxXXe/ixv45CqCvS1tVstOzpy+A0TygzZC6dBj9IQRhQkjBuMDC8Bi3AIjuoOga8yGw4ollS07fAtufe+eON6Pe081OkskQthteWigfj/51R+tXMrRg8F4Hwbj/ShMDPDAfi0OzIN1cFtDw8nS5XBM4UtdPTQr065FAxgGmfka1Hn5Ng9BO4rwJZdruTkP20iwaXCwaXFw6LFXKgcFYL9Dgel2E/Q1rYEzRb6UoWZWlqmbXMAwCPs1oNPYWjmCd5VwI4yHyR2P20na3InDaAf+EuwwOFV6gmP4S7A+aILH+nS4fnQuNdjAyzKd9ZoaeCLLk+wuJ4SD9bwCJ/DRjwR1rwmHUdUrleP9GIzfXA72e1Vgu5kNzy69Tz1RcTY9VZMLGf0UwNNlPI+fKW78UBOvZLSDhPvHid03DhDUg2YcrE6VehQcxgCwD20B2+AmsBvmw4te9paxy65BzBnEdZKHFwoILy3tLhk6xq143kXsutfIKTLSnLKbdf+OrsXAppsD1n4JWPolYNPPoV/0sPP+7nNZyjhX582kW7fjPpdoXvLQCe6uZyqy6P5xXG4EIvtGLXf3wxYSrN0YWNUeMKoJA7MuBGw6Hm3XsAvGetnR1isI+SaQ1boNm6ur4qbcbSYqLReInEctuPhWLf7FcD2hfHiKpC3ncbB2Oz31AbPaB6wazAkseaFF4xkD4jEJ2JzD8f1lD/HZcDNHaVVjW03t6Kq79XjK4xZCaVbh9Ms10mBgVuFgVjstcKHHdOwyR69rAjOAeE4KhUpDuB3FhPBaI57/XO1W8KzDTT7SRGQ/bSN227XYq1D0KFjVKFg0GNh7UHqsh13u+M1VwugRr0kKFeGIS5MCDdRV42kjbZwyi8qt1NTGqTD/hINdg8N4H/ry2DQoWNTOgDD6r4tuykcqLHmkFfGZ9J6dHeoyEXdVKb7yegNeaOrEaKsaA7saA4cWg4k+FCYMKNidwG4MLBqc/rOdu2ugYZbsIjXb979/4z81cXhmaRc4kgAAAABJRU5ErkJggg==",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#593b2d",
+                        "foreground": "#fff",
+                        "population": 0.23,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#7a6405",
+                        "foreground": "#fff",
+                        "population": 9.75,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#7a6405",
+                        "foreground": "#fff",
+                        "population": 9.75,
+                        "title": "#fff"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#8b630d",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#f2d086",
+                        "foreground": "#000",
+                        "population": 0,
+                        "title": "#000"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#8c7666",
+                        "foreground": "#fff",
+                        "population": 0.01,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#8c640e",
+                        "foreground": "#fff",
+                        "population": 0.02,
+                        "title": "#fff"
+                    }
+                }
+            },
+            "mimeType": "image/png",
+            "originalFilename": "Adults 1 1.png",
+            "path": "images/gx7uk6s7/production/89578fa48b428695282ef9982441f5301f3c6f71-670x845.png",
+            "sha1hash": "89578fa48b428695282ef9982441f5301f3c6f71",
+            "size": 523973,
+            "uploadId": "rrbqCgTs6w3qr95NA45hSM03u3SYQE2D",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/89578fa48b428695282ef9982441f5301f3c6f71-670x845.png"
+        },
+        {
+            "_createdAt": "2025-10-14T22:27:02Z",
+            "_id": "image-d0f060e6d30264fe731ac41a1487ddd14ee350f1-142x150-png",
+            "_rev": "OtSwRNXAIYzjp5mWDS9LnX",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-14T22:27:02Z",
+            "assetId": "d0f060e6d30264fe731ac41a1487ddd14ee350f1",
+            "extension": "png",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "eWL;gOof_Nt7xYj]jtoLazaz?wj[MvazD+t6azWEj?js-ja}9bf6%1",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 0.9466666666666667,
+                    "height": 150,
+                    "width": 142
+                },
+                "hasAlpha": true,
+                "isOpaque": false,
+                "lqip": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAADu0lEQVR4nK2VXUybVRjH69ciF4temIxt6o2i0c2PaJzTqK0FKaxUBxstrRKnGQpdXXGDAm2HrqxbX4TIWGBAJBljA3SWpMUr48wYusFkUhy05z3vByVRL71zbMno35zTsZYOnBde/POevH3eX57zfPyrkSTJrKpqkFL6FyEkIYoiE5ZEMpT+G4slhCTYt4qiDKuqatbMzc0NxeNxSZbl65kwykQpJEr5k2sFqCzL1+fn52k8Hh/UyLL8pyzLC5TSZTCm2WgMlyMzuDg5jQuT0/zM3mXGUUoTiqJcVRTldw2l9KooioupAILZWAznJ6bQFxqFr3sEn7ae4WLnvtA5nB+fugkmt7KklN6glP6tIYRcSwEJrsxGET47DtfRILT2Tjy+U8BG0yEudtbaO1B7NIjQ2XH8NhOFSFJAURQXOJCQJJBlxmCV/kE8UdqMrNxG3KP14u43PElpvcjSNyKnVMDH/kEeO5ssQSaQcODYpSnUtw9jk0XA+oI6PLZ9HzYYa3G/3oO7tF7cq/Mi60031uo9eMoioK59GGMTEdYoVv8UkF2ZZdcfHoXefhzZBR7k7apErccKq+NDPFpUg7W5DXjEVINXy/dgi82BjcYG6O2d6A+NIhrlo3ODELKgiRFyjVJxkXWwqTvM67TOUIfd+8vxbU8BWgIlePuj3dDvqoTF8QG+COxA40ELNu/ciydLA/B1hXF5eiYhSVIKKFG6+PMvEXwiDCF7WxOy812odltxbkiHoa4CNB8uQWugGC2BYnx/Ih+nOozYarPjYaMPjsDX+OlS5HYgG4WKplN4yODDeoMLNV4rLpx5HeHetzDQsQ2hnnycPGbE5Dc6jPQa8Np7lcguPIgK32mMXvw1IaVfeXmGh7Au34U9de/iuxO5OH28EH3HjAh2G/BVWxF+PJmHwU4jXrFVrZ4hTathzg6BA8ud76OrzYQvm7ejRShGR6sJRw6XoLfdBOFICV60OFI1jKTVcKnL0RjhXc61d2JDoRtFFRX4zGfmV69221DfaIGj3obPm8yobrDhOfM+Htuf2eXlcxhBQ/swnikLIOed/dhqc+D5MieetTjxgnUvNpudeNnmwEtlTmwp9/OZHZuYun0Ol4BsFkf4pgzgaYuAB/MOYI3Og/u0bqzRevj5gbwD2GQWUOUfWH1TxMxd/iG5y7qqpV32c7Eze+dqC/KYKyvt8opuE01zm540t+m56TYT/+I28p38cDrph0x38kNZlv/4z459y7VXcWzG4I6tqmrp//WfIkmS5R+R4+agykzDdgAAAABJRU5ErkJggg==",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#465a70",
+                        "foreground": "#fff",
+                        "population": 0.49,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#073e79",
+                        "foreground": "#fff",
+                        "population": 25.05,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#073e79",
+                        "foreground": "#fff",
+                        "population": 25.05,
+                        "title": "#fff"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#acc3d8",
+                        "foreground": "#000",
+                        "population": 0.35,
+                        "title": "#fff"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#dad283",
+                        "foreground": "#000",
+                        "population": 1.08,
+                        "title": "#000"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#a39b52",
+                        "foreground": "#fff",
+                        "population": 0.08,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#f3bf37",
+                        "foreground": "#000",
+                        "population": 5.9,
+                        "title": "#fff"
+                    }
+                }
+            },
+            "mimeType": "image/png",
+            "originalFilename": "book.png",
+            "path": "images/gx7uk6s7/production/d0f060e6d30264fe731ac41a1487ddd14ee350f1-142x150.png",
+            "sha1hash": "d0f060e6d30264fe731ac41a1487ddd14ee350f1",
+            "size": 5026,
+            "uploadId": "hiHiK8a5huel0SqenuXbgvZuzGDKg1AS",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/d0f060e6d30264fe731ac41a1487ddd14ee350f1-142x150.png"
+        },
+        {
+            "_createdAt": "2025-10-14T22:26:42Z",
+            "_id": "image-e01fe9cb3f052843c1d4eaaccd0af9d539ba4280-144x150-png",
+            "_rev": "fQh03pUyiAChIhIJQIKqfa",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-14T22:26:42Z",
+            "assetId": "e01fe9cb3f052843c1d4eaaccd0af9d539ba4280",
+            "extension": "png",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "eZK_LKof~pt6xYkCfRj[j@jt~pj@D%f6IVt6j@aza#ayt6jsIVWVxt",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 0.96,
+                    "height": 150,
+                    "width": 144
+                },
+                "hasAlpha": true,
+                "isOpaque": false,
+                "lqip": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAADtUlEQVR4nK1VXWxTZRhu/BsgeuFwhmAcoFEczEkgTsbF2rF1tNuwE/bDWOeW7rS02+j+lNEWGRLtJsVEncgwmjhIBjPBMd3ACwXChI0B65htv+/8tOvNNHrnhS6Yncd8pw2c7ocrLp6cL993znOe932/5301hJAcSZJOCoIwTSmdpZTKlFKoQVRI2CdEZqCU/iUIwmlJkgo04XC4KxqNToii+E/8MOEjnmfg40g8i0MWRXFmamoqFIlEejSSJAXC4fDfPM/PIwuGCPyTAYyNTypg62AotBjpv5IkTWsEQfiD/UEdaihEcP3WHfRd/BXHei7A80U/3F3f4+i3F9A7dBXXxiYQDJK5pLM8z9/VUEr/VBP+Fgzh4pUxHO4egKHpJNIqfFhd7EVqsRevlvug39cNd1c/fvxlFJOBBLXs+/8SCFmIjKzJ14f0PT4szz2Ex7I9eDTbjcez3XhqmwsrDW5kVHTC4e3FDz+PIBiMkRKiIhQEYYbl8PrNCbSfGEB6hQ9JuoN4JNuDJTlupBj3Y62pBRllTmzeXY81Re9iQ1kn2j49h6uj4/cqfl+hIM6ECJHPDA1ju7MbT+e9jydz25Bs2I9VRa3IqqqHyc6h2GFBgY3D+l1OJOs90NmPo6f/MgIxlfcJJUmc8d8JyJ3fDOKVsqNYonVj9VstyKyswxZzHQr3WlHZWIPShhoYrbVIL3Vi+bYDeHFnB9q/PI+b45PsSslETThya0JuOfYdVhV9iKU6F9JKGmG0cSiwWbHDzuFthwWFNgvyLBzSSpxYlnMAKYYj2PtRrxI2T6lMiIpw+IZfruvoxXPGI8rL60udMFg5BXkWK3Q1Nmw125FZ6cAaUzOStC48oz+M6vZTuHTt9nxCtcIknQsv72yCvpYRWfFmpQObd9dhY3k9Xi+vx/NFrXhC60KK4YPFFSo5/HoQ6+I5fMnUjFyLDdrqmLIssx1bzA5kVdmx1tSMpVqXksNDC+VQiFf57NAwDM5upGw/iA279iGf45Bfy0LmkMeetRz0HIfXShvwbL47VuXzV5QqE/qAe5j5zsfIKGlSlG2tsiuqGNia7WWUNGLTHi/aPjuH4VH/AvdwjlNaP+lDVnUnUgtdWJH/HpL1MbD1C4UuvGH2oqGDOWV0YafM9fJPzMsnBmBs/ErxMvNxqsmLdXEve+55OTjfyzzPL9htRhbpNmcGF+82lNK7D7UfiqI4rYlEIp9Ho1H/Q+vYgiDo2EyhlP5OCJmdS6qeJw+aKZIk9bCZ8j8VLdVyWx5higAAAABJRU5ErkJggg==",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#48576c",
+                        "foreground": "#fff",
+                        "population": 0.68,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#063d7a",
+                        "foreground": "#fff",
+                        "population": 25.53,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#063d7a",
+                        "foreground": "#fff",
+                        "population": 25.53,
+                        "title": "#fff"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#abc0ce",
+                        "foreground": "#000",
+                        "population": 0.42,
+                        "title": "#fff"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#c8dff7",
+                        "foreground": "#000",
+                        "population": 0.68,
+                        "title": "#000"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#64a474",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#1c48a4",
+                        "foreground": "#fff",
+                        "population": 0.06,
+                        "title": "#fff"
+                    }
+                }
+            },
+            "mimeType": "image/png",
+            "originalFilename": "graphic.png",
+            "path": "images/gx7uk6s7/production/e01fe9cb3f052843c1d4eaaccd0af9d539ba4280-144x150.png",
+            "sha1hash": "e01fe9cb3f052843c1d4eaaccd0af9d539ba4280",
+            "size": 7504,
+            "uploadId": "Wjqyo3UAaoSfWgk34PV45Mensq7jhUdR",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/e01fe9cb3f052843c1d4eaaccd0af9d539ba4280-144x150.png"
+        },
+        {
+            "_createdAt": "2025-10-10T00:49:25Z",
+            "_id": "image-e0eb6c2b3609e22141db41088c6fa721c30649b5-1433x591-png",
+            "_rev": "B6YuB78WQfXgiCeBjodLRk",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-10T00:49:25Z",
+            "assetId": "e0eb6c2b3609e22141db41088c6fa721c30649b5",
+            "extension": "png",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "MYGkwb}$E05b9#S*skI[I^t2Z}R;S7nyt5",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 2.424703891708968,
+                    "height": 591,
+                    "width": 1433
+                },
+                "hasAlpha": true,
+                "isOpaque": false,
+                "lqip": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAACbklEQVR4nC3Q20/SYQCHcS5qrdZF6yiCoxoorlRcZk3ziGggBxENE20gCA2Rg/4wjGWwMg9ZK221KDVD08zDmrF1srVkai5nJ13dtLX+hffu3d5vy3Xx3H4uHl6ChoPY0AKD3Ywwp0K0pxyvBnV4O6LD/IgGC6NqzD6sQr3Pg/2qELYWhzfbJg9jl7IDfF07BDo/ErUcBNpW8P6B0iofTLZqdLtyMNddiJVoKZbHFFgdL8aPmSLMT5hg77wJsW0MB0yPN9tbG8Ue0xMk1A9DaLwOQUXgP6j2I73GDc5fgeGOHMT68rE6WoC1p4XYmM7Hr1gRpiY4VPe9RmZwBekXPiCZW4TIs4zDTe8gsU7iYG0/hPogEv+BfHUr5JZzGBo4haXJIixOVWI9VoDPMwX4OKlAfFqDvsEuyLtWkBX+juzQGiSBDYhbv6LMOw5NHYc0rRtCrR98DQeeSOtGQ1Mp3kSSsD6XgU8vtViJ5SIyoAR30QJnoAlq/wBSWxYg5ZYg87+H2BtHsmcBRt9t2OuqcEJZA6HKs/mRd9RgZ23ebPaiZzdbfrCPfZlJYfFnqcwbOMNkujDL0IaYrOYaO2K5z2SOCMty3GXJ5ggTm4eZsTnI2h0KVnZawUTFFiZQ+xgvs7qBtvmO07Ewn8b7d9Lfszvot+cCGrhko7nGIVppvkJdHht1c43U02anVo+dZp3l6CFdkJobTfSWK43Wlkqp5KSKCpVOykvRO4jTlUcmrgrI0p3t5M/sFvIzlkhCnc1Ea50i7f4QedRtINFePRnt1ZMblytJiclOJOXN5HyDktxziohFLiDSY3kkqcRK/gJH7WTWMGdY1wAAAABJRU5ErkJggg==",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#38617d",
+                        "foreground": "#fff",
+                        "population": 4.08,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#043c7c",
+                        "foreground": "#fff",
+                        "population": 8.06,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#043c7c",
+                        "foreground": "#fff",
+                        "population": 8.06,
+                        "title": "#fff"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#cadddb",
+                        "foreground": "#000",
+                        "population": 3.03,
+                        "title": "#000"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#f8bf2e",
+                        "foreground": "#000",
+                        "population": 7.84,
+                        "title": "#fff"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#63808a",
+                        "foreground": "#fff",
+                        "population": 2.28,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#f1b706",
+                        "foreground": "#000",
+                        "population": 4.7,
+                        "title": "#fff"
+                    }
+                }
+            },
+            "mimeType": "image/png",
+            "originalFilename": "banner 1.png",
+            "path": "images/gx7uk6s7/production/e0eb6c2b3609e22141db41088c6fa721c30649b5-1433x591.png",
+            "sha1hash": "e0eb6c2b3609e22141db41088c6fa721c30649b5",
+            "size": 732195,
+            "uploadId": "UOeMoNZWegL0TUCVNqHjGJ0Rg7UZ1yTZ",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/e0eb6c2b3609e22141db41088c6fa721c30649b5-1433x591.png"
+        },
+        {
+            "_createdAt": "2025-10-10T00:30:39Z",
+            "_id": "image-e108b21f514ff9517a6d2d5f499f47dbf8165da8-794x122-png",
+            "_rev": "TYzLq1jkpxBbhvXHi3lhtp",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-10T00:30:39Z",
+            "assetId": "e108b21f514ff9517a6d2d5f499f47dbf8165da8",
+            "extension": "png",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "42PZr%~q~q4n-;",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 6.508196721311475,
+                    "height": 122,
+                    "width": 794
+                },
+                "hasAlpha": true,
+                "isOpaque": false,
+                "lqip": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAf0lEQVR4nC3OSQpCURBD0b8hN6CIfYfot5nYINihONOhG3DZdaTgDS4UIZWkwg9fXHHDHjVeuOOCJx4RccQKA4wxwiE9EfGOiE+VRpwjYoMtFpiU510JSG2ZOmaFOaalfI1TBmdgLyI6CYaFflmQS/JOWmigWZZlWHrb6Jay+g8hm8Y3qsol9AAAAABJRU5ErkJggg==",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#3c3c3c",
+                        "foreground": "#fff",
+                        "population": 0.6,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#424242",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#7c7c7c",
+                        "foreground": "#fff",
+                        "population": 1.13,
+                        "title": "#fff"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#bcbcbc",
+                        "foreground": "#000",
+                        "population": 0.42,
+                        "title": "#fff"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#bcbcbc",
+                        "foreground": "#000",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#7c7c7c",
+                        "foreground": "#fff",
+                        "population": 1.13,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#7f7f7f",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    }
+                }
+            },
+            "mimeType": "image/png",
+            "originalFilename": "Logo Principal Branca.png",
+            "path": "images/gx7uk6s7/production/e108b21f514ff9517a6d2d5f499f47dbf8165da8-794x122.png",
+            "sha1hash": "e108b21f514ff9517a6d2d5f499f47dbf8165da8",
+            "size": 9197,
+            "uploadId": "aRgvS6fIrzucqj3AlU2z74DW1YKo6vXo",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/e108b21f514ff9517a6d2d5f499f47dbf8165da8-794x122.png"
+        },
+        {
+            "_createdAt": "2025-10-14T22:34:09Z",
+            "_id": "image-ea60f627e4c31b987e91179a7aa14ee94bb43975-562x814-png",
+            "_rev": "fQh03pUyiAChIhIJQILoe5",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-14T22:34:09Z",
+            "assetId": "ea60f627e4c31b987e91179a7aa14ee94bb43975",
+            "extension": "png",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "dEFz+F~70#ad0VEQIpIq0jM~-Txs^Ioc%1-TS0t3t7NK",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 0.6904176904176904,
+                    "height": 814,
+                    "width": 562
+                },
+                "hasAlpha": true,
+                "isOpaque": false,
+                "lqip": "data:image/png;base64,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",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#5a4531",
+                        "foreground": "#fff",
+                        "population": 0.38,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#663404",
+                        "foreground": "#fff",
+                        "population": 0.02,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#5a4531",
+                        "foreground": "#fff",
+                        "population": 0.38,
+                        "title": "#fff"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#6b602d",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#d7cda1",
+                        "foreground": "#000",
+                        "population": 0,
+                        "title": "#000"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#8d7264",
+                        "foreground": "#fff",
+                        "population": 0.01,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#726630",
+                        "foreground": "#fff",
+                        "population": 0.05,
+                        "title": "#fff"
+                    }
+                }
+            },
+            "mimeType": "image/png",
+            "originalFilename": "Teens 3 1.png",
+            "path": "images/gx7uk6s7/production/ea60f627e4c31b987e91179a7aa14ee94bb43975-562x814.png",
+            "sha1hash": "ea60f627e4c31b987e91179a7aa14ee94bb43975",
+            "size": 638068,
+            "uploadId": "r4nqBJECxtw5t1Y0RxQfEB9a5CpY3484",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/ea60f627e4c31b987e91179a7aa14ee94bb43975-562x814.png"
+        },
+        {
+            "_createdAt": "2025-10-14T22:30:41Z",
+            "_id": "image-eca63f835378ef6cd2d1c11fb58de0594efa75b4-497x721-png",
+            "_rev": "fQh03pUyiAChIhIJQILDpl",
+            "_type": "sanity.imageAsset",
+            "_updatedAt": "2025-10-14T22:30:41Z",
+            "assetId": "eca63f835378ef6cd2d1c11fb58de0594efa75b4",
+            "extension": "png",
+            "metadata": {
+                "_type": "sanity.imageMetadata",
+                "blurHash": "dDDuYS~8050507EQ}:=@IVWU%1xZxoNaRV$*E4jFxZa~",
+                "dimensions": {
+                    "_type": "sanity.imageDimensions",
+                    "aspectRatio": 0.6893203883495146,
+                    "height": 721,
+                    "width": 497
+                },
+                "hasAlpha": true,
+                "isOpaque": false,
+                "lqip": "data:image/png;base64,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",
+                "palette": {
+                    "_type": "sanity.imagePalette",
+                    "darkMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#5a402b",
+                        "foreground": "#fff",
+                        "population": 1.03,
+                        "title": "#fff"
+                    },
+                    "darkVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#643404",
+                        "foreground": "#fff",
+                        "population": 0.02,
+                        "title": "#fff"
+                    },
+                    "dominant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#5a402b",
+                        "foreground": "#fff",
+                        "population": 1.03,
+                        "title": "#fff"
+                    },
+                    "lightMuted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#6d532b",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "lightVibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#d9c39f",
+                        "foreground": "#000",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "muted": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#8c6c50",
+                        "foreground": "#fff",
+                        "population": 0,
+                        "title": "#fff"
+                    },
+                    "vibrant": {
+                        "_type": "sanity.imagePaletteSwatch",
+                        "background": "#8c6b37",
+                        "foreground": "#fff",
+                        "population": 0.06,
+                        "title": "#fff"
+                    }
+                }
+            },
+            "mimeType": "image/png",
+            "originalFilename": "Kids 4 2.png",
+            "path": "images/gx7uk6s7/production/eca63f835378ef6cd2d1c11fb58de0594efa75b4-497x721.png",
+            "sha1hash": "eca63f835378ef6cd2d1c11fb58de0594efa75b4",
+            "size": 348752,
+            "uploadId": "7ajb9qoNilbM8NPzR4EBbhHETBojKO1R",
+            "url": "https://cdn.sanity.io/images/gx7uk6s7/production/eca63f835378ef6cd2d1c11fb58de0594efa75b4-497x721.png"
+        }
+    ],
+    "syncTags": [
+        "s1:JNGZTw"
+    ],
+    "ms": 23
+}

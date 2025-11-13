@@ -1,0 +1,286 @@
+:root{
+    --header-height: 155px;
+    --header-bg: #054a87;     
+    --header-bg-deep: #053f75;
+    --accent: #f59e0b;        
+    --white-opacity: rgba(255,255,255,0.95);
+}
+
+body{
+    margin: 0;
+    padding-top: calc(var(--header-height) + 6px);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+
+}
+
+/* Colunas */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    background: linear-gradient(180deg, var(--header-bg), var(--header-bg-deep) 60%);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 0 28px;
+    gap: 12px;
+    z-index: 9999;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+/* faixa em baixo do header*/
+.header::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 6px;
+    background: var(--accent);
+    z-index: 0;
+}
+
+/* containers */
+.header__left,
+.header__right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 2;
+}
+
+/* posiciona os grupos no centro */
+.header__left{ justify-content: flex-end; }
+.header__right{ justify-content: flex-start; }
+
+
+/* centralizar logo */
+.header__center{ 
+  width: auto;
+}
+
+.header__center a{ 
+    pointer-events: auto; 
+    display:inline-flex; 
+    align-items:center; 
+    padding: 10px;
+    text-align: center;
+}
+
+/* logo */
+.rockfeller-logo{
+    object-fit: contain;
+    display: block;
+    user-select: none;
+    min-width: 300px;
+    
+}
+
+/* navs (left/right) */
+.header__left nav,
+.header__right nav{
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+.header__left ul,
+.header__right ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+/* link visual */
+.header nav a{
+    color: var(--white-opacity);
+    text-decoration: none;
+    padding: 12px 14px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-transform: none;
+    letter-spacing: 0.2px;
+}
+
+/* separadores */
+.header__left ul li + li::before,
+.header__right ul li + li::before{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 50px;
+    background: white;
+    margin: 0 12px;
+    vertical-align: middle;
+}
+
+/* separador entre 'Matricule-se' e o botão 'Teste seu Inglês' */
+.header__right nav::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 50px;
+    background: white;
+    margin-left: 12px; /* espaço entre 'Matricule-se' e o separador */
+    vertical-align: middle;
+}
+
+/*separador logo*/
+.header__left ul li:last-child::after{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 50px;
+    background: white;
+    /* reduz margem fixa pra manter a logo no centro */
+    margin-left: 18px;
+    vertical-align: middle;
+}
+.header__right ul li:first-child::before{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 50px;
+    background: white;
+    /* mantém espaçamento simétrico com a esquerda */
+    margin-right: 18px;
+    vertical-align: middle;
+}
+
+
+/* botão Teste seu Inglês (pílula azul com borda branca) */
+.header__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 90px;
+    border-radius: 999px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: #0078FF;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    white-space: nowrap;
+}
+
+.header__cta:hover{
+    background: rgba(255,255,255,0.98);
+    color: var(--header-bg);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(2,6,20,0.16);
+}
+
+/* botão menu hamburguer (visível só em mobile) */
+.header__hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* menu mobile (escondido por padrão */
+.header__mobile-menu {
+    display: none;
+    position: absolute;
+    top: calc(var(--header-height) + 15px);
+    right: 28px;
+    left: auto;
+    width: 250px;
+    background: rgba(5, 58, 119, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    flex-direction: column;
+    padding: 15px 0;
+    gap: 0;
+    z-index: 9998;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* menu mobile (aberto) */
+.header__mobile-menu.active {
+    display: flex;
+}
+
+.header__mobile-menu a {
+    color: var(--white-opacity);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: background 0.2s;
+}
+
+.header__mobile-menu a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.header__mobile-menu a:last-child {
+    border-bottom: none;
+}
+
+.header__mobile-menu a:last-child {
+    border-bottom: none;
+}
+
+/* mostra o hamburguer em telas pequenas */
+@media (max-width: 900px) {
+    .header__hamburger {
+        display: block;
+    }
+}
+
+/* responsividade*/
+@media (max-width: 900px){
+    :root{ --header-height: 66px; }
+    .rockfeller-logo{ height: 48px; }
+    .header__left, .header__right > nav > ul{ display: none; }
+    .header__left{ visibility: hidden; }
+    .header__right{ justify-content: flex-end; visibility: visible; }
+}
+
+@media (max-width: 480px){
+    :root{ --header-height: 60px; }
+    .header{ padding: 0 12px; }
+    .rockfeller-logo{ height: 40px; }
+    .header__cta{ padding: 6px 12px; font-size: 0.9rem; margin-left: 8px; }
+    .header nav a{
+        font-size: 1rem;  
+        padding: 8px 10px;  
+    }
+}
+
+/* esconde por padrão */
+.header__hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* mostra em telas pequenas */
+@media (max-width: 900px) {
+    .header__hamburger {
+        display: block;
+    }
+}
+
+/* redimensionar separadores */
+@media (max-width: 900px){
+    .header__left ul li + li::before,
+    .header__right ul li + li::before {
+        height: 30px;  /* menor que 50px */
+    }
+}
