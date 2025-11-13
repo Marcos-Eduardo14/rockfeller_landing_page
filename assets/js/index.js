@@ -42,6 +42,7 @@ if (dadosCopia && dadosCopia.testimonials) {
 
 let comentarioshtml = comentariosHtml(dadosCopia); 
 
+document.getElementById("container_header").appendChild(headerhtml);
 document.getElementById("container_sessao_hero").appendChild(herohtml);
 carrosselHero();
 document.getElementById("container_nossos_cursos").appendChild(nossoscursoshtml);
