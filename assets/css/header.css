@@ -74,7 +74,7 @@ body{
     object-fit: contain;
     display: block;
     user-select: none;
-    min-width: 300px;
+    min-width: 100px;
     
 }
 
@@ -243,44 +243,68 @@ body{
 }
 
 /* responsividade*/
+
+
+/* ======================================
+   RESPONSIVIDADE MOBILE (MELHORADA)
+   ====================================== */
+
 @media (max-width: 900px){
-    :root{ --header-height: 66px; }
-    .rockfeller-logo{ height: 48px; }
-    .header__left, .header__right > nav > ul{ display: none; }
-    .header__left{ visibility: hidden; }
-    .header__right{ justify-content: flex-end; visibility: visible; }
-}
 
-@media (max-width: 480px){
-    :root{ --header-height: 60px; }
-    .header{ padding: 0 12px; }
-    .rockfeller-logo{ height: 40px; }
-    .header__cta{ padding: 6px 12px; font-size: 0.9rem; margin-left: 8px; }
-    .header nav a{
-        font-size: 1rem;  
-        padding: 8px 10px;  
+    /* Ajusta o header para 3 colunas:
+       hamburguer | logo | espaço vazio */
+    .header{
+        grid-template-columns: auto 1fr auto;
+        padding: 0 18px;
+        height: 110px; /* menor no mobile */
     }
-}
 
-/* esconde por padrão */
-.header__hamburger {
-    display: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: white;
-}
-
-/* mostra em telas pequenas */
-@media (max-width: 900px) {
-    .header__hamburger {
+    /* Mostrar botão hamburguer */
+    .header__hamburger{
         display: block;
+        font-size: 2rem;
+        z-index: 10000;
     }
-}
 
-/* redimensionar separadores */
-@media (max-width: 900px){
+    /* Ocultar menus laterais por completo */
+    .header__left nav,
+    .header__right nav,
+    .header__cta{
+        display: none !important;
+    }
+
+    /* Centralizar logo */
+    .header__center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Redimensionar logo */
+    .rockfeller-logo{
+        min-width: 140px;
+        max-width: 58vw;
+        height: auto;
+    }
+
+    /* Remover todos separadores */
     .header__left ul li + li::before,
-    .header__right ul li + li::before {
-        height: 30px;  /* menor que 50px */
+    .header__right ul li + li::before,
+    .header__right nav::after,
+    .header__left ul li:last-child::after,
+    .header__right ul li:first-child::before{
+        display: none !important;
+    }
+
+    /* Força menu mobile a ocupar largura correta */
+    .header__mobile-menu{
+        right: 18px;
+        width: 220px;
+    }
+
+    /* Aumentar espaçamento entre links do mobile */
+    .header__mobile-menu a{
+        font-size: 1.1rem;
+        padding: 14px 20px;
     }
 }
