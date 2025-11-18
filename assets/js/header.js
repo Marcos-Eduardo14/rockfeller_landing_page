@@ -14,8 +14,6 @@ export function headerHtml(headerobj) {
 
     const right = document.createElement("div");
     right.className = "header__right";
-    
-
 
     // Logo (center)
     const logoLink = document.createElement("a");
@@ -123,10 +121,11 @@ export function headerHtml(headerobj) {
     header.appendChild(left);
     header.appendChild(center);
     header.appendChild(right);
-    header.appendChild(mobileMenu);
+    header.appendChild(mobileMenu);    
 
     return header;
 }
+
 
 function gerarImagem(ref) {
     if (!ref) return "";

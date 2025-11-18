@@ -19,13 +19,6 @@ let herohtml = heroHtml(secoes.hero);
 let sobrenoshtml = sobrenosHtml(secoes.secaosobre);
 let nossoscursoshtml = nossoscursosHtml(secoes.nossoscursos);
 let footerhtml = footerHtml(secoes.footer);
-
-document.getElementById("container_sessao_hero").appendChild(herohtml);
-document.getElementById("container_nossos_cursos").appendChild(nossoscursoshtml);
-document.getElementById("container_footer").appendChild(footerhtml);
-//document.getElementById("container_footer").appendChild(footerhtml);
-
-
 let formulariohtml = formularioHtml(secoes.formulario);
 //let footerhtml = footerHtml(secoes.footer);
 
@@ -45,6 +38,8 @@ let comentarioshtml = comentariosHtml(dadosCopia);
 document.getElementById("container_header").appendChild(headerhtml);
 document.getElementById("container_sessao_hero").appendChild(herohtml);
 carrosselHero();
+
 document.getElementById("container_nossos_cursos").appendChild(nossoscursoshtml);
 document.getElementById("container_formulario").appendChild(formulariohtml);
 document.getElementById("container_comentarios").appendChild(comentarioshtml);
+document.getElementById("container_footer").appendChild(footerhtml);

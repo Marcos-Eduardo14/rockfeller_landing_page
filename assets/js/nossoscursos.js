@@ -48,6 +48,8 @@ export function nossoscursosHtml(nossoscursosobj) {
   }
 });
 
+  
+
   const cards = document.createElement("div");
   cards.classList.add("cards_cursos");
   if (nossoscursosobj.courseCategories && Array.isArray(nossoscursosobj.courseCategories)) {

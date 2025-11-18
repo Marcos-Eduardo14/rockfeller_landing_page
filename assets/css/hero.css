@@ -4,7 +4,6 @@
 }
 #container_sessao_hero > div{ 
   position: relative;
-  width: 100%;
   padding-top: 40%;
   overflow: hidden;
 }
@@ -61,17 +60,17 @@
 }
 
 .carousel-dot {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.6);
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: var(--offwhite);
+    border: 2px solid var(--azul_tree);
     cursor: pointer;
     padding: 0;
     transition: background-color 0.3s;
 }
 
 .carousel-dot.active {
-    background-color: #007bff; 
-    border-color: #0056b3;
+    background-color: var(--azul_four); 
+    border-color: var(--offwhite);
 }

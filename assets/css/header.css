@@ -6,10 +6,13 @@
     --white-opacity: rgba(255,255,255,0.95);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding-top: calc(var(--header-height) + 6px);
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 
 }
 
@@ -79,7 +82,9 @@ body{
     min-width: 0;
 }
 
-    
+.rockfeller-logo:hover {
+    transform: scale(1.12);
+}
 
 
 /* navs (left/right) */
@@ -88,6 +93,7 @@ body{
     display: flex;
     align-items: center;
     gap: 0;
+    user-select: none;
 }
 .header__left ul,
 .header__right ul{
@@ -98,6 +104,7 @@ body{
     gap: 0;
     align-items: center;
     justify-content: center;
+    user-select: none;
 }
 
 /* link visual */
@@ -110,6 +117,7 @@ body{
     display: inline-block;
     text-transform: none;
     letter-spacing: 0.2px;
+    user-select: none;
 }
 
 /* separadores */
@@ -156,7 +164,6 @@ body{
     margin-right: 18px;
     vertical-align: middle;
 }
-
 
 /* botão Teste seu Inglês (pílula azul com borda branca) */
 .header__cta {
@@ -256,7 +263,8 @@ body{
     .header{
         grid-template-columns: auto 1fr auto;
         padding: 0 18px;
-        height: 130px; /* menor no mobile */
+        height: 125px; /* menor no mobile */
+        list-style: none;
     }
 
     /* Mostrar botão hamburguer */
@@ -282,7 +290,7 @@ body{
 
     /* Redimensionar logo */
     .rockfeller-logo{
-        max-width: 260px;
+        max-width: 15rem;
         height: auto;
         min-width: 0;
 }
@@ -295,11 +303,12 @@ body{
     .header__right ul li:first-child::before{
         height: 32px;       
         margin: 0 10px;
+        text-decoration: none;
 }
     /* Força menu mobile a ocupar largura correta */
     .header__mobile-menu{
-        right: 18px;
-        width: 220px;
+        right: 2rem;
+        width: 15rem;
     }
 
     /* Aumentar espaçamento entre links do mobile */

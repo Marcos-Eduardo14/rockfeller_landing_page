@@ -10,7 +10,6 @@ export function footerHtml(footerData) {
 
   const footer = document.createElement("footer");
   footer.style.width = "100%";
-  footer.style.fontFamily = "'Arial', sans-serif";
 
   // Container principal com fundo azul escuro
   const mainContainer = document.createElement("div");
@@ -45,6 +44,7 @@ export function footerHtml(footerData) {
 
   // Logo à esquerda
   const logoContainer = document.createElement("div");
+  logoContainer.userSelect = 'none'
   logoContainer.style.cssText = `
     flex: 0 0 auto;
     min-width: 200px;
@@ -145,6 +145,7 @@ export function footerHtml(footerData) {
 
             if (iconPath) {
               const iconImg = document.createElement("img");
+              iconImg.userSelect = 'none'
               iconImg.src = iconPath;
               iconImg.alt = "";
               iconImg.style.cssText = `

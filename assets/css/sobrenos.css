@@ -1,0 +1,24 @@
+#container_sobre_nos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.titulo_sobre {
+  margin-top: 10rem;
+  font-family: var(--black);
+  font-size: 45px;
+  color: var(--azul_one);
+  user-select: none;
+}
+
+.bar {
+  background-color: var(--amarelo_tree);
+  padding: 5px 5px;
+  width: 20%;
+  min-height: 5px;
+}
