@@ -1,10 +1,11 @@
 export function nossoscursosHtml(nossoscursosobj) {
   // segurança: caso não haja dados
   if (!nossoscursosobj) return document.createTextNode("Nenhum curso encontrado.");
-
+  
+  
   const bar_init = document.createElement("div");
   bar_init.classList.add("bar");
-
+  
   const container = document.getElementById("container_nossos_cursos");
 
   const title = document.createElement("h1");
@@ -47,8 +48,6 @@ export function nossoscursosHtml(nossoscursosobj) {
     destino.scrollIntoView({ behavior: "smooth" });
   }
 });
-
-  
 
   const cards = document.createElement("div");
   cards.classList.add("cards_cursos");

@@ -16,30 +16,24 @@ console.log("Dados carregados:", secoes); // Mudei para ser mais fácil de achar
 // --- 1. CRIAR TODOS OS COMPONENTES ---
 let headerhtml = headerHtml(secoes.header);
 let herohtml = heroHtml(secoes.hero);
-let sobrenoshtml = sobrenosHtml(secoes.secaosobre);
-let nossoscursoshtml = nossoscursosHtml(secoes.nossoscursos);
 let footerhtml = footerHtml(secoes.footer);
 let formulariohtml = formularioHtml(secoes.formulario);
-//let footerhtml = footerHtml(secoes.footer);
-
 let dadosComentarios = secoes.coments;
 
-let dadosCopia = JSON.parse(JSON.stringify(dadosComentarios)); 
-    
+let dadosCopia = JSON.parse(JSON.stringify(dadosComentarios));  
 if (dadosCopia && dadosCopia.testimonials) {
     dadosCopia.testimonials = [
         ...dadosCopia.testimonials, 
         ...dadosCopia.testimonials
     ];
 }
-
 let comentarioshtml = comentariosHtml(dadosCopia); 
 
 document.getElementById("container_header").appendChild(headerhtml);
 document.getElementById("container_sessao_hero").appendChild(herohtml);
 carrosselHero();
-
-document.getElementById("container_nossos_cursos").appendChild(nossoscursoshtml);
+sobrenosHtml(secoes.secaosobre);
+nossoscursosHtml(secoes.nossoscursos);
 document.getElementById("container_formulario").appendChild(formulariohtml);
 document.getElementById("container_comentarios").appendChild(comentarioshtml);
 document.getElementById("container_footer").appendChild(footerhtml);

@@ -1,13 +1,3 @@
-/* =================================================== */
-/* --- Componente de Comentários (VERSÃO FINAL 3.0) --- */
-/* assets/js/comentarios.js
-/* =================================================== */
-
-/**
- * Constrói e RETORNA a seção de depoimentos.
- *
- * @param {object} comentariosObj - O objeto com todos os dados da seção (vem do secoes.coments)
- */
 export function comentariosHtml(comentariosObj) {
   
   if (!comentariosObj || !comentariosObj.testimonials) { 

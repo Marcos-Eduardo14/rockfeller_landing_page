@@ -4,21 +4,31 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 200rem;
   margin: 0 auto;
 }
 
-.titulo_sobre {
-  margin-top: 10rem;
+.titulo_sobre_nos {
+  margin-top: 5rem;
   font-family: var(--black);
   font-size: 45px;
   color: var(--azul_one);
   user-select: none;
 }
 
-.bar {
+.bar_title_sn {
   background-color: var(--amarelo_tree);
   padding: 5px 5px;
   width: 20%;
   min-height: 5px;
+}
+
+.subtitulo_sobre_nos {
+  margin-top: 5rem;
+  width: 95%;
+  text-align: left;
+  font-family: var(--bold);
+  font-size: 30px;
+  color: var(--azul_one);
+  user-select: none;
 }
