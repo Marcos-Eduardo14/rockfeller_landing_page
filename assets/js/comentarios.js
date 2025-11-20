@@ -5,7 +5,7 @@ export function comentariosHtml(comentariosObj) {
     return document.createElement("div"); 
   }
 
-  // --- 2. Criação dos Elementos Principais ---
+  // --- /2. Criação dos Elementos Principais ---
   const section = document.createElement("section");
   section.classList.add("testimonials-section");
 
