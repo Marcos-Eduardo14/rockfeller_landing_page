@@ -13,10 +13,15 @@
     <link rel="stylesheet" href="assets/css/comentarios.css">
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/sobrenos.css"/>
+    <link rel="stylesheet" href="assets/css/loading.css"/>
 
     <!-------------------------------------------->
   </head>
   <body>
+    <div id="loading_screen">
+    <img src="assets/icons/iconrock2.png" class="loading_logo" alt="Logo do Site">
+    <div class="loader"></div>
+    </div>
     <div id="container_header"></div>
     <div id="container_sessao_hero"></div>
     <div id="container_sobre_nos"></div>
@@ -25,8 +30,20 @@
     <div id="container_formulario"></div>
     <div id="container_footer"></div>
 
+
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="module" src="assets/js/index.js"></script>
+
+    <script>
+  window.addEventListener("load", () => {
+  setTimeout(() => {
+    const loader = document.getElementById("loading_screen");
+    loader.style.opacity = "0";
+    loader.style.visibility = "hidden";
+  }, 2000);
+});
+</script>
+
   </body>
 </html>

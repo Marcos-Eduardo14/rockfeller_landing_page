@@ -18,6 +18,7 @@ export function footerHtml(footerData) {
     color: #ffffff;
     padding: 60px 40px 40px;
     position: relative;
+    user-select: none;
   `;
 
   // Linha amarela no topo
@@ -261,6 +262,7 @@ export function footerHtml(footerData) {
     color: #ffffff;
     text-align: center;
     padding: 20px;
+    user-select: none;
   `;
 
   const copyrightText = document.createElement("p");

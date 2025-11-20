@@ -142,12 +142,19 @@ body {
 
   padding: 4rem 12rem 6rem 4rem;
   
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease cubic-bezier(0.4, 0, 0.2, 1);
+
+  border: transparent;
+  
 }
 
 .curso_card:hover {
-  transform: scale(0.99); 
+  transform: scale(0.97) translateY(3px);
+  transition: 0.3s ease;
+
+
+  border: 2px solid var(--azul_tree);
 }
 
 /* Textos Card */
@@ -293,10 +300,14 @@ body {
   padding: 1.2rem 3.5rem;
 }
 
+.bar_title {
+  width: 20%;
+}
+
 }
 
 /* Responsividade para Tablets */
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 768px) and (max-width: 1180px) {
   .bar {
     margin-top: 8rem;
     width: 25%;
@@ -321,14 +332,10 @@ body {
   }
 
   .curso_card {
-    padding: 3rem 6rem 4rem 3rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
-
-@media (hover: none) {
-  .curso_card:hover {
-  transform: scale(0.99); 
-}
-}
 
   .card_with_double_bg {
     background-size: 30%, contain !important;
@@ -361,10 +368,10 @@ body {
 }
 
 /* Responsividade para Mobile */
-@media (min-width: 320px) and (max-width: 1000px) {
+@media (min-width: 375px) and (max-width: 1000px) {
   .bar {
-    margin-top: 6rem;
-    width: 30%;
+    margin-top: 2rem;
+    width: 45%;
   }
 
   .title_cursos {
@@ -398,43 +405,43 @@ body {
     box-sizing: border-box;
   }
 
-  @media (hover: none) {
-  .curso_card:hover {
-  transform: scale(0.99); 
-}
-}
-
   /* Cada card individual */
   .curso_card {
     margin-top: 1rem;
     background-color: var(--azul_four);
     border-radius: 10px;
     padding: 1.5rem 1.5rem 8rem 1.5rem;
-    
+
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
     min-height: 320px;
-    
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.8rem;
     position: relative;
-    
+
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     overflow: hidden;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
   }
 
   /* Ajusta as imagens de fundo para mobile */
   .card_with_double_bg {
     background-size: 45%, cover !important;
     background-position: right bottom 10px, center !important;
+    background-repeat: no-repeat, no-repeat !important;
   }
 
   .card_with_single_bg {
     background-size: cover !important;
     background-position: center !important;
+    background-repeat: no-repeat !important;
   }
 
   .curso_card:hover {
@@ -515,20 +522,36 @@ body {
 
 /* Ajuste específico para celulares pequenos */
 @media (min-width: 320px) and (max-width: 480px) {
+    .bar {
+    margin-top: 2rem;
+    width: 45%;
+  }
+
+  .bar_title {
+  width: 25%;
+}
+  
   .curso_card {
     padding: 1rem 1rem 7rem 1rem;
     gap: 0.6rem;
     min-height: 280px;
+
+    /* AJUSTE APLICADO */
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
   }
 
   .card_with_double_bg {
     background-size: 40%, cover !important;
     background-position: right bottom 5px, center !important;
+    background-repeat: no-repeat, no-repeat !important;
   }
 
   .card_with_single_bg {
     background-size: cover !important;
     background-position: center !important;
+    background-repeat: no-repeat !important;
   }
 
   .curso_card h1 {

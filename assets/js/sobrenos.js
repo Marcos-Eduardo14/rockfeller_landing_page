@@ -15,6 +15,7 @@ export function sobrenosHtml(sobrenosobj) {
     const titulo = document.createElement("h1");
     titulo.classList.add("titulo_sobre_nos");
     titulo.textContent = sobrenosobj.title || "À Rockfeller";
+    titulo.id = "SobreNos";
 
     const bar = document.createElement("div");
     bar.classList.add("bar_title_sn");
@@ -25,7 +26,6 @@ export function sobrenosHtml(sobrenosobj) {
 
     const cards_sn = document.createElement("div");
     cards_sn.classList.add("cards_sobre_nos");
-
     if (sobrenosobj.features && Array.isArray(sobrenosobj.features)) {
     sobrenosobj.features.forEach(sobre => {
       const card = document.createElement("div");
@@ -36,7 +36,11 @@ export function sobrenosHtml(sobrenosobj) {
       img_icon.src = gerarImagem(sobre.icon.asset._ref) || "";
       img_icon.alt = sobre.title || "icone"
 
+      const texts = document.createElement("p");
+      texts.textContent = sobre.description;
+
       card.appendChild(img_icon);
+      card.appendChild(texts);
 
       cards_sn.appendChild(card);
     });

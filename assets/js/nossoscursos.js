@@ -11,6 +11,7 @@ export function nossoscursosHtml(nossoscursosobj) {
   const title = document.createElement("h1");
   title.classList.add("title_cursos");
   title.textContent = nossoscursosobj.title || "Nossos Cursos";
+  title.id = "NossosCursos";
 
   const bar_init_two = document.createElement("div");
   bar_init_two.classList.add("bar_title");

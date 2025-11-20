@@ -1,8 +1,7 @@
 :root{
     --header-height: 125px;
     --header-bg: #054a87;     
-    --header-bg-deep: #053f75;
-    --accent: #f59e0b;        
+    --header-bg-deep: #053f75;     
     --white-opacity: rgba(255,255,255,0.95);
 }
 
@@ -41,7 +40,7 @@ body{
     right: 0;
     bottom: -6px;
     height: 6px;
-    background: var(--accent);
+    background: var(--amarelo_tree);
     z-index: 0;
 }
 
@@ -80,10 +79,12 @@ body{
     max-width: 260px;
     height: auto;
     min-width: 0;
+
+    transition: 0.3s ease;
 }
 
 .rockfeller-logo:hover {
-    transform: scale(1.12);
+    transform: scale(1.10);
 }
 
 
@@ -95,6 +96,7 @@ body{
     gap: 0;
     user-select: none;
 }
+
 .header__left ul,
 .header__right ul{
     list-style: none;
@@ -107,9 +109,10 @@ body{
     user-select: none;
 }
 
+
 /* link visual */
 .header nav a{
-    color: var(--white-opacity);
+    color: var(--white);
     text-decoration: none;
     padding: 12px 14px;
     font-weight: 600;
@@ -118,6 +121,12 @@ body{
     text-transform: none;
     letter-spacing: 0.2px;
     user-select: none;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--amarelo_tree);
+    transform: translateY(-5px);
 }
 
 /* separadores */
@@ -179,14 +188,14 @@ body{
     font-weight: 700;
     font-size: 1rem;
     text-decoration: none;
-    transition: background 0.2s, color 0.2s, transform 0.2s;
+    transition: background 0.2s, transform 0.2s ease-out;
     white-space: nowrap;
 }
 
 .header__cta:hover{
-    background: rgba(255,255,255,0.98);
-    color: var(--header-bg);
-    transform: translateY(-3px);
+    background: var(--amarelo_tree);
+    color: var(--azul_one);
+    transform: scale(1.10);
     box-shadow: 0 8px 20px rgba(2,6,20,0.16);
 }
 
@@ -209,7 +218,7 @@ body{
     right: 28px;
     left: auto;
     width: 250px;
-    background: rgba(5, 58, 119, 0.95);
+    background: var(--azul_one);
     backdrop-filter: blur(10px);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -256,7 +265,7 @@ body{
 
 /* responsividade*/
 
-@media (max-width: 900px){
+@media (max-width: 1024px){
 
     /* Ajusta o header para 3 colunas:
        hamburguer | logo | espaço vazio */
